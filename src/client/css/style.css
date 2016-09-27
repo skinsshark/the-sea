@@ -1,0 +1,11 @@
+* {
+  transition:0.8s all linear;
+}
+
+body {
+  background-color: #FFE1CC;
+}
+
+img{
+  width:100%;
+}
