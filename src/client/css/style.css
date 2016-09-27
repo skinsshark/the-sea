@@ -1,11 +1,20 @@
 * {
-  transition:0.8s all linear;
+  /*transition:0.8s all linear;*/
 }
 
 body {
-  background-color: #FFE1CC;
+  background-color: #FFE1CC; /* update tumblr as well */
+  padding-top:30px;
+}
+
+.show-grid{
+  padding-top:50px;
 }
 
 img{
   width:100%;
+}
+
+h1{
+  text-align:center;
 }

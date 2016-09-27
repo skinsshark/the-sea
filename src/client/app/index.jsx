@@ -1,24 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
+import Fish from './Fish.jsx'
 
 class App extends React.Component {
   render () {
     return (
       <Grid>
+      <h1>the illustrated encyclopedia of fish</h1>
         <Row className="show-grid">
-          <Col xs={12} md={3}>
-            <img src="/src/client/images/giant-gourami.png" />
-          </Col>
-          <Col xs={12} md={3}>
-            <img src="/src/client/images/asian-arowana.png" />
-          </Col>
-          <Col xs={12} md={3}>
-            <img src="/src/client/images/rainbow-trout.png" />
-          </Col>
-          <Col xs={12} md={3}>
-            <img src="/src/client/images/yellow-boxfish.png" />
-          </Col>
+          <Fish name="giant-gourami" />
+          <Fish name="asian-arowana" />
+          <Fish name="rainbow-trout" />
+          <Fish name="yellow-boxfish" />
         </Row>
       </Grid>
     );
