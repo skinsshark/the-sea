@@ -8,7 +8,7 @@ class Fish extends React.Component {
     const basicProps = {
       alt: name,
     };
-    const imageURL = "https://skinsshark.github.io/the-sea/src/client/images/" +
+    const imageURL = "/the-sea/src/client/images/" +
       name + ".png";
 
     return (
