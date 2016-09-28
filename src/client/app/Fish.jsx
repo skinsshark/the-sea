@@ -8,7 +8,7 @@ class Fish extends React.Component {
     const basicProps = {
       alt: name,
     };
-    const imageURL = "/src/client/images/" + name + ".png";
+    const imageURL = "/the-sea/src/client/images/" + name + ".png";
 
     return (
       <Col xs={12} md={3}>
