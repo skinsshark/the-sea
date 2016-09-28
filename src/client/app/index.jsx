@@ -7,7 +7,7 @@ class App extends React.Component {
   render () {
     return (
       <Grid>
-      <h1>the illustrated etestncyclopedia of fish</h1>
+      <h1>the illustrated encyclopedia of fish</h1>
         <Row className="show-grid">
           <Fish name="giant-gourami" />
           <Fish name="asian-arowana" />
