@@ -42,9 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!**********************************!*\
-  !*** ./src/client/app/index.jsx ***!
-  \**********************************/
+/*!**********************!*\
+  !*** ./app/index.js ***!
+  \**********************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59,7 +59,7 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 172);
 	
-	var _Fish = __webpack_require__(/*! ./Fish.jsx */ 425);
+	var _Fish = __webpack_require__(/*! ./components/Fish */ 425);
 	
 	var _Fish2 = _interopRequireDefault(_Fish);
 	
@@ -41572,9 +41572,9 @@
 
 /***/ },
 /* 425 */
-/*!*********************************!*\
-  !*** ./src/client/app/Fish.jsx ***!
-  \*********************************/
+/*!********************************!*\
+  !*** ./app/components/Fish.js ***!
+  \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41609,10 +41609,18 @@
 	  function Fish() {
 	    _classCallCheck(this, Fish);
 	
-	    return _possibleConstructorReturn(this, (Fish.__proto__ || Object.getPrototypeOf(Fish)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Fish.__proto__ || Object.getPrototypeOf(Fish)).call(this));
+	
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(Fish, [{
+	    key: 'handleClick',
+	    value: function handleClick() {
+	      alert('yo');
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var name = this.props.name;
@@ -41620,12 +41628,15 @@
 	      var basicProps = {
 	        alt: name
 	      };
-	      var imageURL = "/src/client/images/" + name + ".png";
+	      var imageURL = "app/images/" + name + ".png";
 	
 	      return _react2.default.createElement(
 	        _reactBootstrap.Col,
 	        { xs: 12, md: 3 },
-	        _react2.default.createElement('img', _extends({ src: imageURL }, basicProps))
+	        _react2.default.createElement('img', _extends({ src: imageURL
+	        }, basicProps, {
+	          onClick: this.handleClick
+	        }))
 	      );
 	    }
 	  }]);
