@@ -20,6 +20,7 @@ class App extends React.Component {
           <Fish name="bluefin-tuna"/>
           <Fish name="sockeye-salmon"/>
           <Fish name="red-coris-wrasse"/>
+          <Fish name="rainbow-trout"/>
         </Row>
       </Grid>
     );

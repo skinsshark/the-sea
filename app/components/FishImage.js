@@ -1,30 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Col } from 'react-bootstrap';
-import Modal from 'react-modal';
 
 class FishImage extends React.Component {
-  constructor() {
-    super();
-    // this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      open: false
-    };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({
-      open: true
-    });
-  }
-
-  closeModal() {
-    this.setState({
-      open: false
-    });
-  }
 
   render () {
     const { name } = this.props;
@@ -34,14 +12,9 @@ class FishImage extends React.Component {
     const imageURL = "app/images/" + name + ".png";
 
     return (
-      <span>
-        <img src={imageURL} onClick={this.openModal}
+        <img src={imageURL}
           {...basicProps}
         />
-        <Modal isOpen={this.state.open} onRequestClose={this.closeModal}>
-          <img src={imageURL} />
-        </Modal>
-      </span>
     );
   }
 }
