@@ -13,14 +13,14 @@ class App extends React.Component {
         <Row className="show-grid">
           <Fish name="asian-arowana"/>
           <Fish name="rainbow-trout"/>
+          <Fish name="bluefin-tuna"/>
           <Fish name="yellow-boxfish"/>
-          <Fish name="giant-gourami"/>
         </Row>
         <Row className="show-grid">
-          <Fish name="bluefin-tuna"/>
+          <Fish name="bonito"/>
           <Fish name="sockeye-salmon"/>
           <Fish name="red-coris-wrasse"/>
-          <Fish name="rainbow-trout"/>
+          <Fish name="giant-gourami"/>
         </Row>
       </Grid>
     );

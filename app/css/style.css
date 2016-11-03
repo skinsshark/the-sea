@@ -1,10 +1,17 @@
-* {
-  /*transition:0.8s all linear;*/
+@font-face {
+  font-family: 'Ranger';
+  src: url("../fonts/Ranger.ttf");
+}
+
+@font-face {
+  font-family: 'Arvil';
+  src: url("../fonts/Arvil.ttf");
 }
 
 body {
-  background-color: #EBEBE5; /* update tumblr as well */
+  background-color: #EBEBE5;
   padding-top:30px;
+  font-family: 'Arvil';
 }
 
 .show-grid{
@@ -17,4 +24,64 @@ img{
 
 h1{
   text-align:center;
+  font-family: 'Arvil';
+  font-size:75px;
+  position:relative;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width:992px){
+  h1{
+    font-size:60px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  h1{
+    font-size:50px;
+  }
+}
+
+h2{
+  margin:0;
+  font-family: 'Ranger';
+  font-size:50px;
+}
+
+button{
+  letter-spacing:1px;
+}
+
+.btn{
+  font-size:20px;
+}
+
+/* modal styles */
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.modal-content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  /*-webkit-overflow-scrolling: touch;*/
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  box-shadow:none;
+}
+
+.modal-overlay-content {
+  background-color: transparent;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
 }

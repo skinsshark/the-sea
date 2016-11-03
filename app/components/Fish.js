@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import FishImage from './FishImage';
+import ModalContents from './ModalContents';
 import Modal from 'react-modal';
 
 class Fish extends React.Component {
@@ -21,6 +22,7 @@ class Fish extends React.Component {
   }
 
   closeModal() {
+
     this.setState({
       open: false
     });
@@ -29,15 +31,15 @@ class Fish extends React.Component {
   render() {
     const { name } = this.props;
 
-
     return (
-      <Col xs={12} md={3}
+      <Col xs={12} sm={6} md={3}
         onClick={this.openModal}>
         <FishImage
           name={name}
         />
         <Modal isOpen={this.state.open} onRequestClose={this.closeModal}>
-          <h1>{name}</h1>
+          <ModalContents name={name} />
+          <button className="btn btn-info" onClick={this.closeModal}>Close</button>
         </Modal>
       </Col>
     )
