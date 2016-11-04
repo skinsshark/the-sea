@@ -22,6 +22,10 @@ class App extends React.Component {
           <Fish name="red-coris-wrasse"/>
           <Fish name="giant-gourami"/>
         </Row>
+        <Row className="show-grid">
+          <Fish name="mackerel"/>
+          <Fish name="mahi-mahi"/>
+        </Row>
       </Grid>
     );
   }

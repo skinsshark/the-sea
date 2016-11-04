@@ -7,9 +7,9 @@ class ModalContents extends React.Component {
 
   render() {
     const { name } = this.props;
-    // TODO: remove the hyphen
+    const fishName = name.replace(/-/g, ' ');
     return (
-      <h2>{name}</h2>
+      <h2>{fishName}</h2>
     )
   }
 }

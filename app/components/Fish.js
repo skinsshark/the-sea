@@ -7,7 +7,6 @@ import Modal from 'react-modal';
 class Fish extends React.Component {
   constructor() {
     super();
-    // this.handleClick = this.handleClick.bind(this);
     this.state = {
       open: false
     };
@@ -22,7 +21,6 @@ class Fish extends React.Component {
   }
 
   closeModal() {
-
     this.setState({
       open: false
     });

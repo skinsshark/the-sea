@@ -108,6 +108,12 @@
 	          _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
 	          _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
 	          _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_Fish2.default, { name: 'mackerel' }),
+	          _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' })
 	        )
 	      );
 	    }
@@ -41627,7 +41633,6 @@
 	  function Fish() {
 	    _classCallCheck(this, Fish);
 	
-	    // this.handleClick = this.handleClick.bind(this);
 	    var _this = _possibleConstructorReturn(this, (Fish.__proto__ || Object.getPrototypeOf(Fish)).call(this));
 	
 	    _this.state = {
@@ -41648,7 +41653,6 @@
 	  }, {
 	    key: 'closeModal',
 	    value: function closeModal() {
-	
 	      this.setState({
 	        open: false
 	      });
@@ -41787,12 +41791,12 @@
 	    key: 'render',
 	    value: function render() {
 	      var name = this.props.name;
-	      // TODO: remove the hyphen
 	
+	      var fishName = name.replace(/-/g, ' ');
 	      return _react2.default.createElement(
 	        'h2',
 	        null,
-	        name
+	        fishName
 	      );
 	    }
 	  }]);
