@@ -13,6 +13,8 @@ body {
   padding-top:30px;
   padding-bottom:100px;
   font-family: 'Arvil';
+  font-size:20px;
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width:767px) {
@@ -26,6 +28,22 @@ body {
   padding-top:50px;
 }
 
+@media only screen and (max-width:992px) {
+  .show-grid {
+    padding-top:0;
+  }
+}
+
+@media only screen and (max-width:992px) and (min-width:768px){
+  header {
+    padding-bottom: 20px;
+  }
+}
+
+.ReactModal__Content .show-grid{
+  padding:40px 0;
+}
+
 img{
   width:100%;
 }
@@ -36,6 +54,15 @@ h1{
   font-size:75px;
   position:relative;
   letter-spacing: 3px;
+}
+
+h1 a,
+h1 a:hover,
+h1 a:focus,
+h1 a:active,
+h1 a:visited {
+  color:#333;
+  text-decoration: none;
 }
 
 @media only screen and (max-width:992px){
@@ -54,14 +81,20 @@ h2{
   margin:0;
   font-family: 'Ranger';
   font-size:50px;
+  word-spacing: -10px;
+  display: inline;
 }
 
-button{
-  letter-spacing:1px;
+.sci-name{
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-left: 10px;
 }
 
 .btn{
   font-size:20px;
+  letter-spacing:1px;
 }
 
 /* modal styles */
@@ -72,10 +105,10 @@ button{
 /* ensure below are being applied */
 .modal-content {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  top: 10vh;
+  bottom: 10vh;
+  left: 15vw;
+  right: 15vw;
   border: 1px solid #ccc;
   background: #fff;
   overflow: auto;
@@ -86,11 +119,13 @@ button{
   box-shadow:none;
 }
 
-.modal-overlay-content {
-  background-color: transparent;
+.modal-overlay {
+  /*background-color: rgba(68,181,209,0.7);*/
+  /*background-color: transparent;*/
+  /*background-color: rgba(235,235,229, 0.6);*/
   position: fixed;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
 }

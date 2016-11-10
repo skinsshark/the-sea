@@ -9,23 +9,29 @@ class App extends React.Component {
   render () {
     return (
       <Grid>
-      <h1>the illustrated encyclopedia of fish</h1>
-        <Row className="show-grid">
-          <Fish name="asian-arowana"/>
-          <Fish name="rainbow-trout"/>
-          <Fish name="bluefin-tuna"/>
-          <Fish name="yellow-boxfish"/>
-        </Row>
-        <Row className="show-grid">
-          <Fish name="bonito"/>
-          <Fish name="sockeye-salmon"/>
-          <Fish name="red-coris-wrasse"/>
-          <Fish name="giant-gourami"/>
-        </Row>
-        <Row className="show-grid">
-          <Fish name="mackerel"/>
-          <Fish name="mahi-mahi"/>
-        </Row>
+        <header>
+        {/* TODO: change link */}
+          <h1><a href="#">the illustrated encyclopedia of fish</a></h1>
+        </header>
+        <main>
+          <Row className="show-grid">
+            <Fish name="asian-arowana"/>
+            <Fish name="rainbow-trout"/>
+            <Fish name="bluefin-tuna"/>
+            <Fish name="yellow-boxfish"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="bonito"/>
+            <Fish name="sockeye-salmon"/>
+            <Fish name="red-coris-wrasse"/>
+            <Fish name="giant-gourami"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="atlantic-mackerel"/>
+            <Fish name="mahi-mahi"/>
+            <Fish name="asian-catfish"/>
+          </Row>
+        </main>
       </Grid>
     );
   }

@@ -89,31 +89,44 @@
 	        _reactBootstrap.Grid,
 	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'header',
 	          null,
-	          'the illustrated encyclopedia of fish'
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#' },
+	              'the illustrated encyclopedia of fish'
+	            )
+	          )
 	        ),
 	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_Fish2.default, { name: 'mackerel' }),
-	          _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' })
+	          'main',
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' })
+	          )
 	        )
 	      );
 	    }
@@ -41672,7 +41685,9 @@
 	        }),
 	        _react2.default.createElement(
 	          _reactModal2.default,
-	          { isOpen: this.state.open, onRequestClose: this.closeModal },
+	          { isOpen: this.state.open, onRequestClose: this.closeModal,
+	            className: 'modal-content',
+	            overlayClassName: 'modal-overlay' },
 	          _react2.default.createElement(_ModalContents2.default, { name: name }),
 	          _react2.default.createElement(
 	            'button',
@@ -41770,6 +41785,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _FishImage = __webpack_require__(/*! ./FishImage */ 426);
+	
+	var _FishImage2 = _interopRequireDefault(_FishImage);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 172);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41777,6 +41798,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// import { data } from './json/data.json';
 	
 	var ModalContents = function (_React$Component) {
 	  _inherits(ModalContents, _React$Component);
@@ -41794,9 +41817,32 @@
 	
 	      var fishName = name.replace(/-/g, ' ');
 	      return _react2.default.createElement(
-	        'h2',
+	        'div',
 	        null,
-	        fishName
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          fishName
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'sci-name' },
+	          'Ostracion Cubicus'
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 12, sm: 7 },
+	            _react2.default.createElement(_FishImage2.default, { name: name })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 12, sm: 5 },
+	            'more info on this side'
+	          )
+	        )
 	      );
 	    }
 	  }]);

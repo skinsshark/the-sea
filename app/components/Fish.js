@@ -35,7 +35,9 @@ class Fish extends React.Component {
         <FishImage
           name={name}
         />
-        <Modal isOpen={this.state.open} onRequestClose={this.closeModal}>
+        <Modal isOpen={this.state.open} onRequestClose={this.closeModal}
+        className="modal-content"
+        overlayClassName="modal-overlay">
           <ModalContents name={name} />
           <button className="btn btn-info" onClick={this.closeModal}>Close</button>
         </Modal>
