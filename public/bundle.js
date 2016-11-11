@@ -97,7 +97,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: '#' },
-	              'the illustrated encyclopedia of fish'
+	              _react2.default.createElement('img', { src: 'app/images/Logo.png' })
 	            )
 	          )
 	        ),
@@ -125,7 +125,14 @@
 	            { className: 'show-grid' },
 	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' })
+	            _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' })
 	          )
 	        )
 	      );
@@ -41819,30 +41826,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          fishName
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'sci-name' },
-	          'Ostracion Cubicus'
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, sm: 7 },
-	            _react2.default.createElement(_FishImage2.default, { name: name })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 12, sm: 5 },
-	            'more info on this side'
-	          )
-	        )
+	        _react2.default.createElement(_FishImage2.default, { name: name })
 	      );
 	    }
 	  }]);

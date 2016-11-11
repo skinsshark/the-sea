@@ -13,16 +13,8 @@ class ModalContents extends React.Component {
     const fishName = name.replace(/-/g, ' ');
     return (
       <div>
-        <h2>{fishName}</h2>
-        <span className="sci-name">Ostracion Cubicus</span>
-        <Row className="show-grid">
-          <Col xs={12} sm={7}>
-            <FishImage name={name} />
-          </Col>
-          <Col xs={12} sm={5}>
-            more info on this side
-          </Col>
-        </Row>
+        <FishImage name={name} />
+        {/*<p className="sci-name">Ostracion Cubicus</p>*/}
       </div>
     )
   }

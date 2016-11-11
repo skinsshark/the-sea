@@ -10,8 +10,7 @@ class App extends React.Component {
     return (
       <Grid>
         <header>
-        {/* TODO: change link */}
-          <h1><a href="#">the illustrated encyclopedia of fish</a></h1>
+          <h1><a href="#"><img src="app/images/Logo.png" /></a></h1>
         </header>
         <main>
           <Row className="show-grid">
@@ -30,6 +29,11 @@ class App extends React.Component {
             <Fish name="atlantic-mackerel"/>
             <Fish name="mahi-mahi"/>
             <Fish name="asian-catfish"/>
+            <Fish name="black-sea-bass"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="wels-catfish"/>
+            <Fish name="tiger-queen-anthias"/>
           </Row>
         </main>
       </Grid>

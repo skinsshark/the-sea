@@ -1,0 +1,43 @@
+{
+  "fish":[
+    {
+      "name":"asian-arowana",
+      "sciName":"Scleropages Formosus"
+    },
+    {
+      "name":"rainbow-trout",
+      "sciName":"Oncorhynchus Mykiss"
+    },
+    {
+      "name":"bluefin-tuna",
+      "sciName":"Thunnus Thynnus"
+    },
+    {
+      "name":"yellow-boxfish",
+      "sciName":"Ostracion Cubicus"
+    },
+    {
+      "name":"bonito",
+      "sciName":"Sarda Sarda"
+    },
+    {
+      "name":"sockeye-salmon",
+      "sciName":"Oncorhynchus Nerka"
+    },
+    {
+      "name":"red-coris-wrasse",
+      "sciName":"Coris Gaimard"
+    },
+    {
+      "name":"giant-gourami",
+      "sciName":"Osphronemus Goramy"
+    },
+    {
+      "name":"atlantic-mackerel",
+      "sciName":"Scomber Scombrus"
+    },
+    {
+      "name":"mahi-mahi",
+      "sciName":"Coryphaena Hippurus"
+      }]
+    }

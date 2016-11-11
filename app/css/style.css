@@ -65,15 +65,29 @@ h1 a:visited {
   text-decoration: none;
 }
 
+h1 img {
+  height:31vw;
+  width:auto;
+  margin-bottom: 25px;
+}
+
 @media only screen and (max-width:992px){
   h1{
     font-size:60px;
+  }
+
+  h1 img {
+    height: 40vw;
   }
 }
 
 @media only screen and (max-width:767px){
   h1{
     font-size:50px;
+  }
+
+  h1 img {
+    height: 60vw;
   }
 }
 
@@ -86,15 +100,22 @@ h2{
 }
 
 .sci-name{
-  font-size: 35px;
+  /*font-size: 35px;
   font-style: italic;
   letter-spacing: 1px;
-  margin-left: 10px;
+  margin-left: 10px;*/
+  /*position: absolute;*/
+  bottom: 120px;
+  left:120px;
 }
 
 .btn{
   font-size:20px;
   letter-spacing:1px;
+  position: absolute;
+  right: 10%;
+  bottom: 30px;
+  padding: 8px 20px;
 }
 
 /* modal styles */
@@ -115,8 +136,35 @@ h2{
   /*-webkit-overflow-scrolling: touch;*/
   border-radius: 4px;
   outline: none;
-  padding: 20px;
+  padding: 0;
   box-shadow:none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px){
+  .modal-content {
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vw;
+    right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .modal-content {
+    top: 1vh;
+    bottom: 1vh;
+    left: 1vw;
+    right: 1vw;
+  }
+}
+
+.modal-content img{
+  width:90%;
+  text-align:center;
+  margin:0 auto;
+  margin-bottom: 30px;
+  position:relative;
 }
 
 .modal-overlay {
