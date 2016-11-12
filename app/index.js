@@ -12,7 +12,7 @@ class App extends React.Component {
         <header>
           <h1><a href="#"><img src="app/images/Logo.png" /></a></h1>
         </header>
-        <main>
+        <main className="container">
           <Row className="show-grid">
             <Fish name="asian-arowana"/>
             <Fish name="rainbow-trout"/>

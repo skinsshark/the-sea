@@ -24,6 +24,10 @@ body {
   }
 }
 
+.container {
+  width: 100%;
+}
+
 .show-grid{
   padding-top:50px;
 }

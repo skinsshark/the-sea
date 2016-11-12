@@ -103,7 +103,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'main',
-	          null,
+	          { className: 'container' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
