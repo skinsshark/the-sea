@@ -10,8 +10,7 @@
 
 body {
   background-color: #EBEBE5;
-  padding-top:30px;
-  padding-bottom:100px;
+  padding: 75px 0 100px;
   font-family: 'Arvil';
   font-size:20px;
   letter-spacing: 1px;
@@ -24,8 +23,20 @@ body {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  body {
+    padding-top:40px;
+  }
+}
+
 .container {
-  width: 100%;
+  width: 95%;
+}
+
+@media only screen and (max-width:992px) {
+  .container {
+    width: 100%;
+  }
 }
 
 .show-grid{
@@ -70,8 +81,8 @@ h1 a:visited {
 }
 
 h1 img {
-  height:31vw;
-  width:auto;
+  height: 20vw;
+  width: auto;
   margin-bottom: 25px;
 }
 
@@ -95,7 +106,7 @@ h1 img {
   }
 }
 
-h2{
+h2 {
   margin:0;
   font-family: 'Ranger';
   font-size:50px;
@@ -123,9 +134,9 @@ h2{
 }
 
 /* modal styles */
-/*.ReactModal__Body--open {
+.ReactModal__Body--open {
   overflow: hidden;
-}*/
+}
 
 /* ensure below are being applied */
 .modal-content {
