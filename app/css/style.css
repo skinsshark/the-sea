@@ -123,9 +123,9 @@ h2{
 }
 
 /* modal styles */
-.ReactModal__Body--open {
+/*.ReactModal__Body--open {
   overflow: hidden;
-}
+}*/
 
 /* ensure below are being applied */
 .modal-content {

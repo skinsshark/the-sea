@@ -107,9 +107,9 @@
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
 	          ),
 	          _react2.default.createElement(
@@ -124,7 +124,7 @@
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
 	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
 	          ),
@@ -132,7 +132,15 @@
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
 	            _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' })
+	            _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'barracuda' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' })
 	          )
 	        )
 	      );

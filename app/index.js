@@ -14,9 +14,9 @@ class App extends React.Component {
         </header>
         <main className="container">
           <Row className="show-grid">
-            <Fish name="asian-arowana"/>
-            <Fish name="rainbow-trout"/>
-            <Fish name="bluefin-tuna"/>
+            <Fish name="stoplight-loosejaw"/>
+            <Fish name="mahi-mahi"/>
+            <Fish name="yellowtail-kingfish"/>
             <Fish name="yellow-boxfish"/>
           </Row>
           <Row className="show-grid">
@@ -27,13 +27,19 @@ class App extends React.Component {
           </Row>
           <Row className="show-grid">
             <Fish name="atlantic-mackerel"/>
-            <Fish name="mahi-mahi"/>
+            <Fish name="bluefin-tuna"/>
             <Fish name="asian-catfish"/>
             <Fish name="black-sea-bass"/>
           </Row>
           <Row className="show-grid">
             <Fish name="wels-catfish"/>
             <Fish name="tiger-queen-anthias"/>
+            <Fish name="barracuda"/>
+              <Fish name="asian-arowana"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="star-sturgeon"/>
+            <Fish name="rainbow-trout"/>
           </Row>
         </main>
       </Grid>
