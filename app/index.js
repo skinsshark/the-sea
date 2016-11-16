@@ -10,9 +10,9 @@ class App extends React.Component {
     return (
       <Grid>
         <header>
-          <h1><a href="#"><img src="app/images/Logo.png" /></a></h1>
+          <h1><a href="#"><img src="app/images/Logo.png" alt="the illustrated encyclopedia of fish"/></a></h1>
         </header>
-        <main className="container">
+        <main className="container main-container">
           <Row className="show-grid">
             <Fish name="stoplight-loosejaw"/>
             <Fish name="mahi-mahi"/>

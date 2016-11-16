@@ -9,24 +9,37 @@
 }
 
 body {
-  background-color: #EBEBE5;
+  background-color: #fff;
   padding: 75px 0 100px;
   font-family: 'Arvil';
   font-size:20px;
   letter-spacing: 1px;
+  background-image: url("../images/background.png");
+  background-position: center -200px;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-top:40px;
+    background-position: center -5px;
+  }
 }
 
 @media only screen and (max-width:767px) {
   body {
     padding-left:15px;
     padding-right:15px;
+    background-size: 175vw auto;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  body {
-    padding-top:40px;
-  }
+.main-container {
+  /*background-color: #fff;*/
+  /*-moz-box-shadow: 0 300px 50000px 180px #fff;
+  -webkit-box-shadow: 0 300px 50000px 180px #fff;
+  box-shadow: 0 300px 50000px 180px #fff;*/
 }
 
 .container {
@@ -124,19 +137,19 @@ h2 {
   left:120px;
 }
 
-.btn{
+/*.btn{
   font-size:20px;
   letter-spacing:1px;
   position: absolute;
   right: 10%;
   bottom: 30px;
   padding: 8px 20px;
-}
+}*/
 
 /* modal styles */
-.ReactModal__Body--open {
+/*.ReactModal__Body--open {
   overflow: hidden;
-}
+}*/
 
 /* ensure below are being applied */
 .modal-content {

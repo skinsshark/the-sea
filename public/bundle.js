@@ -97,13 +97,13 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: '#' },
-	              _react2.default.createElement('img', { src: 'app/images/Logo.png' })
+	              _react2.default.createElement('img', { src: 'app/images/Logo.png', alt: 'the illustrated encyclopedia of fish' })
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'main',
-	          { className: 'container' },
+	          { className: 'container main-container' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
@@ -41703,12 +41703,7 @@
 	          { isOpen: this.state.open, onRequestClose: this.closeModal,
 	            className: 'modal-content',
 	            overlayClassName: 'modal-overlay' },
-	          _react2.default.createElement(_ModalContents2.default, { name: name }),
-	          _react2.default.createElement(
-	            'button',
-	            { className: 'btn btn-info', onClick: this.closeModal },
-	            'Close'
-	          )
+	          _react2.default.createElement(_ModalContents2.default, { name: name })
 	        )
 	      );
 	    }
