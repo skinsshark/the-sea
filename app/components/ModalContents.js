@@ -1,7 +1,7 @@
+import data from '!json!./json/data.json';
 import React from 'react';
 import FishImage from './FishImage';
 import { Row, Col } from 'react-bootstrap';
-// import { data } from './json/data.json';
 
 class ModalContents extends React.Component {
   constructor() {
@@ -14,7 +14,7 @@ class ModalContents extends React.Component {
     return (
       <div>
         <FishImage name={name} />
-        {/*<p className="sci-name">Ostracion Cubicus</p>*/}
+        // <p className="sci-name">{{scientific}}</p>
       </div>
     )
   }

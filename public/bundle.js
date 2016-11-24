@@ -140,7 +140,16 @@
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
 	            _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' })
+	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'blue-parrotfish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'paraya' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' })
 	          )
 	        )
 	      );
@@ -41643,7 +41652,7 @@
 	
 	var _ModalContents2 = _interopRequireDefault(_ModalContents);
 	
-	var _reactModal = __webpack_require__(/*! react-modal */ 428);
+	var _reactModal = __webpack_require__(/*! react-modal */ 430);
 	
 	var _reactModal2 = _interopRequireDefault(_reactModal);
 	
@@ -41791,6 +41800,10 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
+	var _data = __webpack_require__(/*! json!./json/data.json */ 428);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -41798,6 +41811,10 @@
 	var _FishImage = __webpack_require__(/*! ./FishImage */ 426);
 	
 	var _FishImage2 = _interopRequireDefault(_FishImage);
+	
+	var _Science = __webpack_require__(/*! ./Science */ 429);
+	
+	var _Science2 = _interopRequireDefault(_Science);
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 172);
 	
@@ -41808,8 +41825,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// import { data } from './json/data.json';
 	
 	var ModalContents = function (_React$Component) {
 	  _inherits(ModalContents, _React$Component);
@@ -41829,7 +41844,14 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_FishImage2.default, { name: name })
+	        _react2.default.createElement(_FishImage2.default, { name: name }),
+	        _react2.default.createElement(_Science2.default, { name: _data2.default.fish.name.sciName }),
+	        '// ',
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'sci-name' },
+	          { scientific: scientific }
+	        )
 	      );
 	    }
 	  }]);
@@ -41841,17 +41863,94 @@
 
 /***/ },
 /* 428 */
+/*!*******************************************************!*\
+  !*** ./~/json-loader!./app/components/json/data.json ***!
+  \*******************************************************/
+/***/ function(module, exports) {
+
+	module.exports = {
+		"fish": {
+			"bonito": {
+				"sciName": "Sclerofsdafsdfaspages Formosus"
+			},
+			"2aasian-arowana": {
+				"sciName": "Scleropfffages Formosus"
+			},
+			"3aaaasian-arowana": {
+				"sciName": "Scleropages Formosus"
+			}
+		}
+	};
+
+/***/ },
+/* 429 */
+/*!***********************************!*\
+  !*** ./app/components/Science.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Science = function (_React$Component) {
+	  _inherits(Science, _React$Component);
+	
+	  function Science() {
+	    _classCallCheck(this, Science);
+	
+	    return _possibleConstructorReturn(this, (Science.__proto__ || Object.getPrototypeOf(Science)).call(this));
+	  }
+	
+	  _createClass(Science, [{
+	    key: "render",
+	    value: function render() {
+	      var _props = this.props;
+	      var data = _props.data;
+	      var name = _props.name;
+	
+	      return _react2.default.createElement(
+	        "p",
+	        { className: "sci-name" },
+	        data
+	      );
+	    }
+	  }]);
+	
+	  return Science;
+	}(_react2.default.Component);
+	
+	exports.default = Science;
+
+/***/ },
+/* 430 */
 /*!************************************!*\
   !*** ./~/react-modal/lib/index.js ***!
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./components/Modal */ 429);
+	module.exports = __webpack_require__(/*! ./components/Modal */ 431);
 	
 
 
 /***/ },
-/* 429 */
+/* 431 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/components/Modal.js ***!
   \***********************************************/
@@ -41859,12 +41958,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 34);
-	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 430);
-	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 431));
-	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 446);
-	var elementClass = __webpack_require__(/*! element-class */ 447);
+	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 432);
+	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 433));
+	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 448);
+	var elementClass = __webpack_require__(/*! element-class */ 449);
 	var renderSubtreeIntoContainer = __webpack_require__(/*! react-dom */ 34).unstable_renderSubtreeIntoContainer;
-	var Assign = __webpack_require__(/*! lodash.assign */ 435);
+	var Assign = __webpack_require__(/*! lodash.assign */ 437);
 	
 	var SafeHTMLElement = ExecutionEnvironment.canUseDOM ? window.HTMLElement : {};
 	var AppElement = ExecutionEnvironment.canUseDOM ? document.body : {appendChild: function() {}};
@@ -41975,7 +42074,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 430 */
+/* 432 */
 /*!****************************************!*\
   !*** ./~/react-modal/~/exenv/index.js ***!
   \****************************************/
@@ -42023,7 +42122,7 @@
 
 
 /***/ },
-/* 431 */
+/* 433 */
 /*!*****************************************************!*\
   !*** ./~/react-modal/lib/components/ModalPortal.js ***!
   \*****************************************************/
@@ -42031,9 +42130,9 @@
 
 	var React = __webpack_require__(/*! react */ 1);
 	var div = React.DOM.div;
-	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 432);
-	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 434);
-	var Assign = __webpack_require__(/*! lodash.assign */ 435);
+	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 434);
+	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 436);
+	var Assign = __webpack_require__(/*! lodash.assign */ 437);
 	
 	// so that our CSS is statically analyzable
 	var CLASS_NAMES = {
@@ -42244,13 +42343,13 @@
 
 
 /***/ },
-/* 432 */
+/* 434 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/focusManager.js ***!
   \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 433);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
 	var modalElement = null;
 	var focusLaterElement = null;
 	var needToFocus = false;
@@ -42321,7 +42420,7 @@
 
 
 /***/ },
-/* 433 */
+/* 435 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/tabbable.js ***!
   \***********************************************/
@@ -42380,13 +42479,13 @@
 
 
 /***/ },
-/* 434 */
+/* 436 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/scopeTab.js ***!
   \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 433);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
 	
 	module.exports = function(node, event) {
 	  var tabbable = findTabbable(node);
@@ -42408,7 +42507,7 @@
 
 
 /***/ },
-/* 435 */
+/* 437 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/index.js ***!
   \************************************************/
@@ -42422,9 +42521,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 436),
-	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 442),
-	    keys = __webpack_require__(/*! lodash.keys */ 438);
+	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 438),
+	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 444),
+	    keys = __webpack_require__(/*! lodash.keys */ 440);
 	
 	/**
 	 * A specialized version of `_.assign` for customizing assigned values without
@@ -42497,7 +42596,7 @@
 
 
 /***/ },
-/* 436 */
+/* 438 */
 /*!*********************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/index.js ***!
   \*********************************************************************/
@@ -42511,8 +42610,8 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 437),
-	    keys = __webpack_require__(/*! lodash.keys */ 438);
+	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 439),
+	    keys = __webpack_require__(/*! lodash.keys */ 440);
 	
 	/**
 	 * The base implementation of `_.assign` without support for argument juggling,
@@ -42533,7 +42632,7 @@
 
 
 /***/ },
-/* 437 */
+/* 439 */
 /*!****************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/~/lodash._basecopy/index.js ***!
   \****************************************************************************************/
@@ -42574,7 +42673,7 @@
 
 
 /***/ },
-/* 438 */
+/* 440 */
 /*!**************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/index.js ***!
   \**************************************************************/
@@ -42588,9 +42687,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(/*! lodash._getnative */ 439),
-	    isArguments = __webpack_require__(/*! lodash.isarguments */ 440),
-	    isArray = __webpack_require__(/*! lodash.isarray */ 441);
+	var getNative = __webpack_require__(/*! lodash._getnative */ 441),
+	    isArguments = __webpack_require__(/*! lodash.isarguments */ 442),
+	    isArray = __webpack_require__(/*! lodash.isarray */ 443);
 	
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -42819,7 +42918,7 @@
 
 
 /***/ },
-/* 439 */
+/* 441 */
 /*!**********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash._getnative/index.js ***!
   \**********************************************************************************/
@@ -42965,7 +43064,7 @@
 
 
 /***/ },
-/* 440 */
+/* 442 */
 /*!***********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarguments/index.js ***!
   \***********************************************************************************/
@@ -43203,7 +43302,7 @@
 
 
 /***/ },
-/* 441 */
+/* 443 */
 /*!*******************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarray/index.js ***!
   \*******************************************************************************/
@@ -43392,7 +43491,7 @@
 
 
 /***/ },
-/* 442 */
+/* 444 */
 /*!*************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/index.js ***!
   \*************************************************************************/
@@ -43406,9 +43505,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 443),
-	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 444),
-	    restParam = __webpack_require__(/*! lodash.restparam */ 445);
+	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 445),
+	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 446),
+	    restParam = __webpack_require__(/*! lodash.restparam */ 447);
 	
 	/**
 	 * Creates a function that assigns properties of source object(s) to a given
@@ -43453,7 +43552,7 @@
 
 
 /***/ },
-/* 443 */
+/* 445 */
 /*!************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._bindcallback/index.js ***!
   \************************************************************************************************/
@@ -43527,7 +43626,7 @@
 
 
 /***/ },
-/* 444 */
+/* 446 */
 /*!**************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._isiterateecall/index.js ***!
   \**************************************************************************************************/
@@ -43668,7 +43767,7 @@
 
 
 /***/ },
-/* 445 */
+/* 447 */
 /*!********************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash.restparam/index.js ***!
   \********************************************************************************************/
@@ -43744,7 +43843,7 @@
 
 
 /***/ },
-/* 446 */
+/* 448 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/ariaAppHider.js ***!
   \***************************************************/
@@ -43795,7 +43894,7 @@
 
 
 /***/ },
-/* 447 */
+/* 449 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/element-class/index.js ***!
   \************************************************/

@@ -40,6 +40,13 @@ class App extends React.Component {
           <Row className="show-grid">
             <Fish name="star-sturgeon"/>
             <Fish name="rainbow-trout"/>
+            <Fish name="blue-parrotfish"/>
+            <Fish name="paraya"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="goblin-shark"/>
+            <Fish name="humpback-anglerfish"/>
+            <Fish name="goliath-grouper"/>
           </Row>
         </main>
       </Grid>
