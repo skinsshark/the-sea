@@ -1,43 +1,79 @@
 {
-  "fish":[
-    {
-      "name":"asian-arowana",
-      "sciName":"Scleropages Formosus"
+  "fish" : {
+    "hogfish" : {
+      "sci" : "Lachnolaimus Maximus"
     },
-    {
-      "name":"rainbow-trout",
-      "sciName":"Oncorhynchus Mykiss"
+    "blue-ram-cichlid" : {
+      "sci" : "Mikrogeophagus Ramirezi"
     },
-    {
-      "name":"bluefin-tuna",
-      "sciName":"Thunnus Thynnus"
+    "goliath-grouper" : {
+      "sci" : "Epinephelus Itajara"
     },
-    {
-      "name":"yellow-boxfish",
-      "sciName":"Ostracion Cubicus"
+    "goblin-shark" : {
+      "sci" : "Mitsukurina Owstoni"
     },
-    {
-      "name":"bonito",
-      "sciName":"Sarda Sarda"
+    "blue-parrotfish" : {
+      "sci" : "Scarus Coeruleus"
     },
-    {
-      "name":"sockeye-salmon",
-      "sciName":"Oncorhynchus Nerka"
+    "paraya" : {
+      "sci" : "Hydrolycus Scomberoides"
     },
-    {
-      "name":"red-coris-wrasse",
-      "sciName":"Coris Gaimard"
+    "humpback-anglerfish" : {
+      "sci" : "Melanocetus Johnsonii"
     },
-    {
-      "name":"giant-gourami",
-      "sciName":"Osphronemus Goramy"
+    "yellowtail-kingfish" : {
+      "sci" : "Seriola Lalandi"
     },
-    {
-      "name":"atlantic-mackerel",
-      "sciName":"Scomber Scombrus"
+    "stoplight-loosejaw" : {
+      "sci" : "Malacosteus Niger"
     },
-    {
-      "name":"mahi-mahi",
-      "sciName":"Coryphaena Hippurus"
-      }]
+    "star-sturgeon" : {
+      "sci" : "Acipenser Stellatus"
+    },
+    "barracuda" : {
+      "sci" : "Sphyraena"
+    },
+    "tiger-queen-anthias" : {
+      "sci" : "ASDF WHAT IS IT"
+    },
+    "wels-catfish" : {
+      "sci" : "Silurus Glanis"
+    },
+    "black-sea-bass" : {
+      "sci" : "Centropristis Striata"
+    },
+    "asian-catfish" : {
+      "sci" : "Horabagrus Brachysoma"
+    },
+    "mahi-mahi" : {
+      "sci" : "Coryphaena Hippurus"
+    },
+    "atlantic-mackerel" : {
+      "sci" : "Scomber Scombrus"
+    },
+    "bonito" : {
+      "sci" : "Sarda Sarda"
+    },
+    "red-coris-wrasse" : {
+      "sci" : "Coris Gaimard"
+    },
+    "sockeye-salmon" : {
+      "sci" : "Oncorhynchus Nerka"
+    },
+    "rainbow-trout" : {
+      "sci" : "Oncorhynchus Mykiss"
+    },
+    "bluefin-tuna" : {
+      "sci" : "Thunnus Thynnus"
+    },
+    "asian-arowana" : {
+      "sci" : "Scleropages Formosus"
+    },
+    "yellow-boxfish" : {
+      "sci" : "Ostracion Cubicus"
+    },
+    "giant-gourami" : {
+      "sci" : "Osphronemus Goramy"
     }
+  }
+}

@@ -14,7 +14,7 @@ class ModalContents extends React.Component {
     return (
       <div>
         <FishImage name={name} />
-        // <p className="sci-name">{{scientific}}</p>
+        <p>{data.fish[name].sci}</p>
       </div>
     )
   }

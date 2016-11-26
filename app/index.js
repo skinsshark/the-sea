@@ -14,7 +14,7 @@ class App extends React.Component {
         </header>
         <main className="container main-container">
           <Row className="show-grid">
-            <Fish name="stoplight-loosejaw"/>
+            <Fish name="blue-ram-cichlid"/>
             <Fish name="mahi-mahi"/>
             <Fish name="yellowtail-kingfish"/>
             <Fish name="yellow-boxfish"/>
@@ -47,6 +47,10 @@ class App extends React.Component {
             <Fish name="goblin-shark"/>
             <Fish name="humpback-anglerfish"/>
             <Fish name="goliath-grouper"/>
+            <Fish name="stoplight-loosejaw"/>
+          </Row>
+          <Row className="show-grid">
+            <Fish name="hogfish"/>
           </Row>
         </main>
       </Grid>

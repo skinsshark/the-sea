@@ -107,7 +107,7 @@
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
@@ -149,7 +149,13 @@
 	            { className: 'show-grid' },
 	            _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
 	            _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' })
+	            _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' })
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
+	            _react2.default.createElement(_Fish2.default, { name: 'hogfish' })
 	          )
 	        )
 	      );
@@ -41652,7 +41658,7 @@
 	
 	var _ModalContents2 = _interopRequireDefault(_ModalContents);
 	
-	var _reactModal = __webpack_require__(/*! react-modal */ 430);
+	var _reactModal = __webpack_require__(/*! react-modal */ 429);
 	
 	var _reactModal2 = _interopRequireDefault(_reactModal);
 	
@@ -41812,10 +41818,6 @@
 	
 	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
-	var _Science = __webpack_require__(/*! ./Science */ 429);
-	
-	var _Science2 = _interopRequireDefault(_Science);
-	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 172);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -41845,12 +41847,10 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_FishImage2.default, { name: name }),
-	        _react2.default.createElement(_Science2.default, { name: _data2.default.fish.name.sciName }),
-	        '// ',
 	        _react2.default.createElement(
 	          'p',
-	          { className: 'sci-name' },
-	          { scientific: scientific }
+	          null,
+	          _data2.default.fish[name].sci
 	        )
 	      );
 	    }
@@ -41870,87 +41870,97 @@
 
 	module.exports = {
 		"fish": {
+			"hogfish": {
+				"sci": "Lachnolaimus Maximus"
+			},
+			"blue-ram-cichlid": {
+				"sci": "Mikrogeophagus Ramirezi"
+			},
+			"goliath-grouper": {
+				"sci": "Epinephelus Itajara"
+			},
+			"goblin-shark": {
+				"sci": "Mitsukurina Owstoni"
+			},
+			"blue-parrotfish": {
+				"sci": "Scarus Coeruleus"
+			},
+			"paraya": {
+				"sci": "Hydrolycus Scomberoides"
+			},
+			"humpback-anglerfish": {
+				"sci": "Melanocetus Johnsonii"
+			},
+			"yellowtail-kingfish": {
+				"sci": "Seriola Lalandi"
+			},
+			"stoplight-loosejaw": {
+				"sci": "Malacosteus Niger"
+			},
+			"star-sturgeon": {
+				"sci": "Acipenser Stellatus"
+			},
+			"barracuda": {
+				"sci": "Sphyraena"
+			},
+			"tiger-queen-anthias": {
+				"sci": "ASDF WHAT IS IT"
+			},
+			"wels-catfish": {
+				"sci": "Silurus Glanis"
+			},
+			"black-sea-bass": {
+				"sci": "Centropristis Striata"
+			},
+			"asian-catfish": {
+				"sci": "Horabagrus Brachysoma"
+			},
+			"mahi-mahi": {
+				"sci": "Coryphaena Hippurus"
+			},
+			"atlantic-mackerel": {
+				"sci": "Scomber Scombrus"
+			},
 			"bonito": {
-				"sciName": "Sclerofsdafsdfaspages Formosus"
+				"sci": "Sarda Sarda"
 			},
-			"2aasian-arowana": {
-				"sciName": "Scleropfffages Formosus"
+			"red-coris-wrasse": {
+				"sci": "Coris Gaimard"
 			},
-			"3aaaasian-arowana": {
-				"sciName": "Scleropages Formosus"
+			"sockeye-salmon": {
+				"sci": "Oncorhynchus Nerka"
+			},
+			"rainbow-trout": {
+				"sci": "Oncorhynchus Mykiss"
+			},
+			"bluefin-tuna": {
+				"sci": "Thunnus Thynnus"
+			},
+			"asian-arowana": {
+				"sci": "Scleropages Formosus"
+			},
+			"yellow-boxfish": {
+				"sci": "Ostracion Cubicus"
+			},
+			"giant-gourami": {
+				"sci": "Osphronemus Goramy"
 			}
 		}
 	};
 
 /***/ },
 /* 429 */
-/*!***********************************!*\
-  !*** ./app/components/Science.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Science = function (_React$Component) {
-	  _inherits(Science, _React$Component);
-	
-	  function Science() {
-	    _classCallCheck(this, Science);
-	
-	    return _possibleConstructorReturn(this, (Science.__proto__ || Object.getPrototypeOf(Science)).call(this));
-	  }
-	
-	  _createClass(Science, [{
-	    key: "render",
-	    value: function render() {
-	      var _props = this.props;
-	      var data = _props.data;
-	      var name = _props.name;
-	
-	      return _react2.default.createElement(
-	        "p",
-	        { className: "sci-name" },
-	        data
-	      );
-	    }
-	  }]);
-	
-	  return Science;
-	}(_react2.default.Component);
-	
-	exports.default = Science;
-
-/***/ },
-/* 430 */
 /*!************************************!*\
   !*** ./~/react-modal/lib/index.js ***!
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./components/Modal */ 431);
+	module.exports = __webpack_require__(/*! ./components/Modal */ 430);
 	
 
 
 /***/ },
-/* 431 */
+/* 430 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/components/Modal.js ***!
   \***********************************************/
@@ -41958,12 +41968,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 34);
-	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 432);
-	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 433));
-	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 448);
-	var elementClass = __webpack_require__(/*! element-class */ 449);
+	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 431);
+	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 432));
+	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 447);
+	var elementClass = __webpack_require__(/*! element-class */ 448);
 	var renderSubtreeIntoContainer = __webpack_require__(/*! react-dom */ 34).unstable_renderSubtreeIntoContainer;
-	var Assign = __webpack_require__(/*! lodash.assign */ 437);
+	var Assign = __webpack_require__(/*! lodash.assign */ 436);
 	
 	var SafeHTMLElement = ExecutionEnvironment.canUseDOM ? window.HTMLElement : {};
 	var AppElement = ExecutionEnvironment.canUseDOM ? document.body : {appendChild: function() {}};
@@ -42074,7 +42084,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 432 */
+/* 431 */
 /*!****************************************!*\
   !*** ./~/react-modal/~/exenv/index.js ***!
   \****************************************/
@@ -42122,7 +42132,7 @@
 
 
 /***/ },
-/* 433 */
+/* 432 */
 /*!*****************************************************!*\
   !*** ./~/react-modal/lib/components/ModalPortal.js ***!
   \*****************************************************/
@@ -42130,9 +42140,9 @@
 
 	var React = __webpack_require__(/*! react */ 1);
 	var div = React.DOM.div;
-	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 434);
-	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 436);
-	var Assign = __webpack_require__(/*! lodash.assign */ 437);
+	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 433);
+	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 435);
+	var Assign = __webpack_require__(/*! lodash.assign */ 436);
 	
 	// so that our CSS is statically analyzable
 	var CLASS_NAMES = {
@@ -42343,13 +42353,13 @@
 
 
 /***/ },
-/* 434 */
+/* 433 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/focusManager.js ***!
   \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 434);
 	var modalElement = null;
 	var focusLaterElement = null;
 	var needToFocus = false;
@@ -42420,7 +42430,7 @@
 
 
 /***/ },
-/* 435 */
+/* 434 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/tabbable.js ***!
   \***********************************************/
@@ -42479,13 +42489,13 @@
 
 
 /***/ },
-/* 436 */
+/* 435 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/scopeTab.js ***!
   \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 434);
 	
 	module.exports = function(node, event) {
 	  var tabbable = findTabbable(node);
@@ -42507,7 +42517,7 @@
 
 
 /***/ },
-/* 437 */
+/* 436 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/index.js ***!
   \************************************************/
@@ -42521,9 +42531,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 438),
-	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 444),
-	    keys = __webpack_require__(/*! lodash.keys */ 440);
+	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 437),
+	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 443),
+	    keys = __webpack_require__(/*! lodash.keys */ 439);
 	
 	/**
 	 * A specialized version of `_.assign` for customizing assigned values without
@@ -42596,7 +42606,7 @@
 
 
 /***/ },
-/* 438 */
+/* 437 */
 /*!*********************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/index.js ***!
   \*********************************************************************/
@@ -42610,8 +42620,8 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 439),
-	    keys = __webpack_require__(/*! lodash.keys */ 440);
+	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 438),
+	    keys = __webpack_require__(/*! lodash.keys */ 439);
 	
 	/**
 	 * The base implementation of `_.assign` without support for argument juggling,
@@ -42632,7 +42642,7 @@
 
 
 /***/ },
-/* 439 */
+/* 438 */
 /*!****************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/~/lodash._basecopy/index.js ***!
   \****************************************************************************************/
@@ -42673,7 +42683,7 @@
 
 
 /***/ },
-/* 440 */
+/* 439 */
 /*!**************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/index.js ***!
   \**************************************************************/
@@ -42687,9 +42697,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(/*! lodash._getnative */ 441),
-	    isArguments = __webpack_require__(/*! lodash.isarguments */ 442),
-	    isArray = __webpack_require__(/*! lodash.isarray */ 443);
+	var getNative = __webpack_require__(/*! lodash._getnative */ 440),
+	    isArguments = __webpack_require__(/*! lodash.isarguments */ 441),
+	    isArray = __webpack_require__(/*! lodash.isarray */ 442);
 	
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -42918,7 +42928,7 @@
 
 
 /***/ },
-/* 441 */
+/* 440 */
 /*!**********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash._getnative/index.js ***!
   \**********************************************************************************/
@@ -43064,7 +43074,7 @@
 
 
 /***/ },
-/* 442 */
+/* 441 */
 /*!***********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarguments/index.js ***!
   \***********************************************************************************/
@@ -43302,7 +43312,7 @@
 
 
 /***/ },
-/* 443 */
+/* 442 */
 /*!*******************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarray/index.js ***!
   \*******************************************************************************/
@@ -43491,7 +43501,7 @@
 
 
 /***/ },
-/* 444 */
+/* 443 */
 /*!*************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/index.js ***!
   \*************************************************************************/
@@ -43505,9 +43515,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 445),
-	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 446),
-	    restParam = __webpack_require__(/*! lodash.restparam */ 447);
+	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 444),
+	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 445),
+	    restParam = __webpack_require__(/*! lodash.restparam */ 446);
 	
 	/**
 	 * Creates a function that assigns properties of source object(s) to a given
@@ -43552,7 +43562,7 @@
 
 
 /***/ },
-/* 445 */
+/* 444 */
 /*!************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._bindcallback/index.js ***!
   \************************************************************************************************/
@@ -43626,7 +43636,7 @@
 
 
 /***/ },
-/* 446 */
+/* 445 */
 /*!**************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._isiterateecall/index.js ***!
   \**************************************************************************************************/
@@ -43767,7 +43777,7 @@
 
 
 /***/ },
-/* 447 */
+/* 446 */
 /*!********************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash.restparam/index.js ***!
   \********************************************************************************************/
@@ -43843,7 +43853,7 @@
 
 
 /***/ },
-/* 448 */
+/* 447 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/ariaAppHider.js ***!
   \***************************************************/
@@ -43894,7 +43904,7 @@
 
 
 /***/ },
-/* 449 */
+/* 448 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/element-class/index.js ***!
   \************************************************/
