@@ -1,7 +1,25 @@
 {
   "fish" : {
+    "crocodile-icefish" : {
+      "sci" : "Channichthyidae",
+      "colours" : [
+        "#fff",
+        "#000"
+      ]
+    },
+    "atlantic-halibut" : {
+      "sci" : "Hippoglossus Hippoglossus",
+      "colours" : [
+        "#fff",
+        "#000"
+      ]
+    },
     "hogfish" : {
-      "sci" : "Lachnolaimus Maximus"
+      "sci" : "Lachnolaimus Maximus",
+      "colours" : [
+        "#fff",
+        "#000"
+      ]
     },
     "blue-ram-cichlid" : {
       "sci" : "Mikrogeophagus Ramirezi"

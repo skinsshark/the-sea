@@ -147,24 +147,24 @@ h2 {
 }*/
 
 /* modal styles */
-/*.ReactModal__Body--open {
+.ReactModal__Body--open {
   overflow: hidden;
-}*/
+}
 
 /* ensure below are being applied */
 .modal-content {
   position: absolute;
-  top: 10vh;
-  bottom: 10vh;
-  left: 15vw;
-  right: 15vw;
-  border: 1px solid #ccc;
+  top: 5vh;
+  bottom: 5vh;
+  left: 5vw;
+  right: 5vw;
+  border: none;
   background: #fff;
   overflow: auto;
   /*-webkit-overflow-scrolling: touch;*/
   border-radius: 4px;
   outline: none;
-  padding: 0;
+  padding: 30px;
   box-shadow:none;
   text-align: center;
 }
@@ -188,20 +188,48 @@ h2 {
 }
 
 .modal-content img{
-  width:90%;
+  height: 85%;
+  width:auto;
   text-align:center;
   margin:0 auto;
   margin-bottom: 30px;
   position:relative;
 }
 
+@media only screen and (max-width: 991px){
+  .modal-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .modal-content img {
+    top: 1vh;
+    bottom: 1vh;
+    left: 1vw;
+    right: 1vw;
+  }
+}
+
+.modal-content p {
+  margin-top: -30px;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.modal-content .scheme {
+  width:50px;
+  height: 50px;
+  background-color:#000;
+}
+
 .modal-overlay {
-  /*background-color: rgba(68,181,209,0.7);*/
-  /*background-color: transparent;*/
-  /*background-color: rgba(235,235,229, 0.6);*/
+  background-image: url("../images/modal-bg.png");
+  background-size: cover;
   position: fixed;
-  top: 5%;
-  left: 5%;
-  right: 5%;
-  bottom: 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

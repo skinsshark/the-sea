@@ -9,7 +9,7 @@ class FishImage extends React.Component {
     const basicProps = {
       alt: name,
     };
-    const imageURL = "app/images/" + name + ".png";
+    const imageURL = "app/images/fish/" + name + ".png";
 
     return (
         <img src={imageURL}

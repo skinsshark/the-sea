@@ -96,7 +96,7 @@
 	            null,
 	            _react2.default.createElement(
 	              'a',
-	              { href: '#' },
+	              { href: '/' },
 	              _react2.default.createElement('img', { src: 'app/images/Logo.png', alt: 'the illustrated encyclopedia of fish' })
 	            )
 	          )
@@ -155,7 +155,9 @@
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'hogfish' })
+	            _react2.default.createElement(_Fish2.default, { name: 'hogfish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'crocodile-icefish' }),
+	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-halibut' })
 	          )
 	        )
 	      );
@@ -41779,7 +41781,7 @@
 	      var basicProps = {
 	        alt: name
 	      };
-	      var imageURL = "app/images/" + name + ".png";
+	      var imageURL = "app/images/fish/" + name + ".png";
 	
 	      return _react2.default.createElement('img', _extends({ src: imageURL
 	      }, basicProps));
@@ -41837,12 +41839,15 @@
 	    return _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
 	  }
 	
+	  //TODO: renderColourBlocks
+	
 	  _createClass(ModalContents, [{
 	    key: 'render',
 	    value: function render() {
 	      var name = this.props.name;
 	
 	      var fishName = name.replace(/-/g, ' ');
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -41870,8 +41875,26 @@
 
 	module.exports = {
 		"fish": {
+			"crocodile-icefish": {
+				"sci": "Channichthyidae",
+				"colours": [
+					"#fff",
+					"#000"
+				]
+			},
+			"atlantic-halibut": {
+				"sci": "Hippoglossus Hippoglossus",
+				"colours": [
+					"#fff",
+					"#000"
+				]
+			},
 			"hogfish": {
-				"sci": "Lachnolaimus Maximus"
+				"sci": "Lachnolaimus Maximus",
+				"colours": [
+					"#fff",
+					"#000"
+				]
 			},
 			"blue-ram-cichlid": {
 				"sci": "Mikrogeophagus Ramirezi"

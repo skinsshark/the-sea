@@ -8,9 +8,12 @@ class ModalContents extends React.Component {
     super();
   }
 
+  //TODO: renderColourBlocks
+
   render() {
     const { name } = this.props;
     const fishName = name.replace(/-/g, ' ');
+
     return (
       <div>
         <FishImage name={name} />
