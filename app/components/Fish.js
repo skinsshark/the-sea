@@ -39,10 +39,10 @@ class Fish extends React.Component {
         className="modal-content"
         overlayClassName="modal-overlay">
           <ModalContents name={name} />
-          {/*<button className="btn btn-info" onClick={this.closeModal}>Close</button>*/}
+          {/*<button className="btn btn-info visible-sm visible-xs" onClick={this.closeModal}>Close</button>*/}
         </Modal>
       </Col>
-    )
+    );
   }
 }
 

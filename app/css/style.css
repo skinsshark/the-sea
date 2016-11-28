@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Ranger';
-  src: url("../fonts/Ranger.ttf");
+  font-family: 'Sonder';
+  src: url("../fonts/SonderSans-Black.otf");
 }
 
 @font-face {
-  font-family: 'Arvil';
-  src: url("../fonts/Arvil.ttf");
+  font-family: 'Octanis';
+  src: url("../fonts/Octanis-SansRoundedItalic.ttf");
 }
 
 body {
   background-color: #fff;
   padding: 75px 0 100px;
-  font-family: 'Arvil';
+  font-family: 'Octanis';
   font-size:20px;
   letter-spacing: 1px;
   background-image: url("../images/background.png");
@@ -128,11 +128,6 @@ h2 {
 }
 
 .sci-name{
-  /*font-size: 35px;
-  font-style: italic;
-  letter-spacing: 1px;
-  margin-left: 10px;*/
-  /*position: absolute;*/
   bottom: 120px;
   left:120px;
 }
@@ -164,7 +159,7 @@ h2 {
   /*-webkit-overflow-scrolling: touch;*/
   border-radius: 4px;
   outline: none;
-  padding: 30px;
+  padding: 20px;
   box-shadow:none;
   text-align: center;
 }
@@ -188,7 +183,7 @@ h2 {
 }
 
 .modal-content img{
-  height: 85%;
+  height: 75%;
   width:auto;
   text-align:center;
   margin:0 auto;
@@ -215,13 +210,30 @@ h2 {
 .modal-content p {
   margin-top: -30px;
   font-size: 35px;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
+}
+
+.schemes {
+  margin-top: 20px;
 }
 
 .modal-content .scheme {
   width:50px;
   height: 50px;
-  background-color:#000;
+  display:inline-block;
+  margin: 0 70px;
+}
+
+.modal-content .en-fish {
+  font-family: 'Sonder';
+  font-size: 35px;
+  margin-right:10px;
+}
+
+.modal-content .fish-names {
+  font-size: 30px;
+  text-transform: uppercase;
+  /*font-weight: bold;*/
 }
 
 .modal-overlay {

@@ -35,7 +35,7 @@ class App extends React.Component {
             <Fish name="wels-catfish"/>
             <Fish name="tiger-queen-anthias"/>
             <Fish name="barracuda"/>
-              <Fish name="asian-arowana"/>
+            <Fish name="asian-arowana"/>
           </Row>
           <Row className="show-grid">
             <Fish name="star-sturgeon"/>

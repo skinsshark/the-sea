@@ -41839,23 +41839,39 @@
 	    return _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
 	  }
 	
-	  //TODO: renderColourBlocks
-	
 	  _createClass(ModalContents, [{
 	    key: 'render',
 	    value: function render() {
 	      var name = this.props.name;
 	
 	      var fishName = name.replace(/-/g, ' ');
+	      var colourCode = _data2.default.fish[name].colours;
+	      var style = {
+	        backgroundColor: name
+	      };
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        console.log(colourCode),
 	        _react2.default.createElement(_FishImage2.default, { name: name }),
 	        _react2.default.createElement(
 	          'p',
-	          null,
+	          { className: 'fish-names' },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'en-fish' },
+	            fishName
+	          ),
+	          ' ',
 	          _data2.default.fish[name].sci
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'schemes' },
+	          colourCode.map(function (name, i) {
+	            return _react2.default.createElement('li', { key: i, style: { backgroundColor: name }, className: 'scheme' });
+	          })
 	        )
 	      );
 	    }
@@ -41878,95 +41894,272 @@
 			"crocodile-icefish": {
 				"sci": "Channichthyidae",
 				"colours": [
-					"#fff",
-					"#000"
+					"#88d3ea",
+					"#c9b61c",
+					"#023964",
+					"#827c91",
+					"#e31514"
 				]
 			},
 			"atlantic-halibut": {
 				"sci": "Hippoglossus Hippoglossus",
 				"colours": [
-					"#fff",
-					"#000"
+					"#88750b",
+					"#47452e",
+					"#717e5e",
+					"#37332e",
+					"#979927"
 				]
 			},
 			"hogfish": {
 				"sci": "Lachnolaimus Maximus",
 				"colours": [
-					"#fff",
-					"#000"
+					"#e28283",
+					"#e6c6bb",
+					"#fb80db",
+					"#212e4e",
+					"#b16162"
 				]
 			},
 			"blue-ram-cichlid": {
-				"sci": "Mikrogeophagus Ramirezi"
+				"sci": "Mikrogeophagus Ramirezi",
+				"colours": [
+					"#ff6200",
+					"#00f8eb",
+					"#6b7cd0",
+					"#1b0a58",
+					"#e794d0"
+				]
 			},
 			"goliath-grouper": {
-				"sci": "Epinephelus Itajara"
+				"sci": "Epinephelus Itajara",
+				"colours": [
+					"#af6b7a",
+					"#c9cc73",
+					"#6a693b",
+					"#98b12f",
+					"#4a3d1a"
+				]
 			},
 			"goblin-shark": {
-				"sci": "Mitsukurina Owstoni"
+				"sci": "Mitsukurina Owstoni",
+				"colours": [
+					"#e6c7e6",
+					"#a1a2b6",
+					"#ff5883",
+					"#514460",
+					"#9299df"
+				]
 			},
 			"blue-parrotfish": {
-				"sci": "Scarus Coeruleus"
+				"sci": "Scarus Coeruleus",
+				"colours": [
+					"#0891cc",
+					"#1f66a4",
+					"#1d55af",
+					"#58aed4",
+					"#012135"
+				]
 			},
 			"paraya": {
-				"sci": "Hydrolycus Scomberoides"
+				"sci": "Hydrolycus Scomberoides",
+				"colours": [
+					"#cbc259",
+					"#b5c3ce",
+					"#a69fbe",
+					"#363b3e",
+					"#654552"
+				]
 			},
 			"humpback-anglerfish": {
-				"sci": "Melanocetus Johnsonii"
+				"sci": "Melanocetus Johnsonii",
+				"colours": [
+					"#af672c",
+					"#992a0e",
+					"#32fff8",
+					"#f0dfc3",
+					"#d6b2b2"
+				]
 			},
 			"yellowtail-kingfish": {
-				"sci": "Seriola Lalandi"
+				"sci": "Seriola Lalandi",
+				"colours": [
+					"#c8cdd0",
+					"#282e68",
+					"#ffd900",
+					"#ad8097",
+					"#ddf3ff"
+				]
 			},
 			"stoplight-loosejaw": {
-				"sci": "Malacosteus Niger"
+				"sci": "Malacosteus Niger",
+				"colours": [
+					"#292345",
+					"#00eaff",
+					"#243843",
+					"#656148",
+					"#3d6982"
+				]
 			},
 			"star-sturgeon": {
-				"sci": "Acipenser Stellatus"
+				"sci": "Acipenser Stellatus",
+				"colours": [
+					"#6d9271",
+					"#c25b5c",
+					"#e8e0af",
+					"#0a1a0d",
+					"#7d7ba0"
+				]
 			},
 			"barracuda": {
-				"sci": "Sphyraena"
+				"sci": "Sphyraena",
+				"colours": [
+					"#988e68",
+					"#2b3533",
+					"#8b5c9c",
+					"#8b5c9c",
+					"#65544e"
+				]
 			},
 			"tiger-queen-anthias": {
-				"sci": "ASDF WHAT IS IT"
+				"sci": "Pseudanthias Lori",
+				"colours": [
+					"#ff98a3",
+					"#942f75",
+					"#fe931f",
+					"#fff06f",
+					"#9da8de"
+				]
 			},
 			"wels-catfish": {
-				"sci": "Silurus Glanis"
+				"sci": "Silurus Glanis",
+				"colours": [
+					"#4e6b55",
+					"#f4dbee",
+					"#32292e",
+					"#1b2f24",
+					"#030804"
+				]
 			},
 			"black-sea-bass": {
-				"sci": "Centropristis Striata"
+				"sci": "Centropristis Striata",
+				"colours": [
+					"#0e1e2f",
+					"#788e9f",
+					"#ffaea1",
+					"#806b8f",
+					"#b3afb6"
+				]
 			},
 			"asian-catfish": {
-				"sci": "Horabagrus Brachysoma"
+				"sci": "Horabagrus Brachysoma",
+				"colours": [
+					"#c8a692",
+					"#c8a692",
+					"#72cbb7",
+					"#72cbb7",
+					"#f2a64a"
+				]
 			},
 			"mahi-mahi": {
-				"sci": "Coryphaena Hippurus"
+				"sci": "Coryphaena Hippurus",
+				"colours": [
+					"#a4fc34",
+					"#fcff00",
+					"#0b2266",
+					"#40f1d7",
+					"#1e80ff"
+				]
 			},
 			"atlantic-mackerel": {
-				"sci": "Scomber Scombrus"
+				"sci": "Scomber Scombrus",
+				"colours": [
+					"#0b1213",
+					"#238585",
+					"#79d8eb",
+					"#79d8eb",
+					"#3c5d71"
+				]
 			},
 			"bonito": {
-				"sci": "Sarda Sarda"
+				"sci": "Sarda Sarda",
+				"colours": [
+					"#fad38a",
+					"#fad38a",
+					"#6b5784",
+					"#ffdef8",
+					"#f8c0c0"
+				]
 			},
 			"red-coris-wrasse": {
-				"sci": "Coris Gaimard"
+				"sci": "Coris Gaimard",
+				"colours": [
+					"#fb4e3d",
+					"#00caf8",
+					"#fad53e",
+					"#a84327",
+					"#0a1c9a"
+				]
 			},
 			"sockeye-salmon": {
-				"sci": "Oncorhynchus Nerka"
+				"sci": "Oncorhynchus Nerka",
+				"colours": [
+					"#0c0105",
+					"#dd3e2b",
+					"#638f82",
+					"#f0c11b",
+					"#559ba7"
+				]
 			},
 			"rainbow-trout": {
-				"sci": "Oncorhynchus Mykiss"
+				"sci": "Oncorhynchus Mykiss",
+				"colours": [
+					"#6e899c",
+					"#cfc8b5",
+					"#f1645a",
+					"#0c1f23",
+					"#afb6bc"
+				]
 			},
 			"bluefin-tuna": {
-				"sci": "Thunnus Thynnus"
+				"sci": "Thunnus Thynnus",
+				"colours": [
+					"#42a1dd",
+					"#9fe4ef",
+					"#140f4e",
+					"#140f4e",
+					"#ff91ea"
+				]
 			},
 			"asian-arowana": {
-				"sci": "Scleropages Formosus"
+				"sci": "Scleropages Formosus",
+				"colours": [
+					"#e1265c",
+					"#9b5210",
+					"#eac081",
+					"#f1679c",
+					"#a2103a"
+				]
 			},
 			"yellow-boxfish": {
-				"sci": "Ostracion Cubicus"
+				"sci": "Ostracion Cubicus",
+				"colours": [
+					"#dbb52e",
+					"#1a1d14",
+					"#f9f095",
+					"#ad8c00",
+					"#eeecd5"
+				]
 			},
 			"giant-gourami": {
-				"sci": "Osphronemus Goramy"
+				"sci": "Osphronemus Goramy",
+				"colours": [
+					"#6caebe",
+					"#e0b4d7",
+					"#4b6193",
+					"#deeeed",
+					"#8a6b8b"
+				]
 			}
 		}
 	};

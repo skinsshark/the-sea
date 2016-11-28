@@ -8,18 +8,27 @@ class ModalContents extends React.Component {
     super();
   }
 
-  //TODO: renderColourBlocks
-
   render() {
     const { name } = this.props;
     const fishName = name.replace(/-/g, ' ');
+    const colourCode = data.fish[name].colours;
+    const style = {
+      backgroundColor: name
+    }
 
     return (
       <div>
         <FishImage name={name} />
-        <p>{data.fish[name].sci}</p>
+        <p className="fish-names">
+          <span className="en-fish">{fishName}</span> {data.fish[name].sci}
+        </p>
+        <ul className="schemes">
+          {colourCode.map(function(name, i){
+            return <li key={i} style={{backgroundColor: name}} className="scheme"></li>;
+          })}
+        </ul>
       </div>
-    )
+    );
   }
 }
 
