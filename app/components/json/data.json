@@ -1,5 +1,23 @@
 {
   "fish" : {
+    "pirhana" : {
+      "sci" : "Pygocentrus Nattereri",
+      "colours" : [
+        "#ff8c27", "#48736c", "#5b6378", "#ad0505", "#39343a"
+      ]
+    },
+    "mangrove-snapper" : {
+      "sci" : "Lutjanus Griseus",
+      "colours" : [
+        "#373035", "#d1a949", "#6a170f", "#87e9ef", "#775289"
+      ]
+    },
+    "blue-marlin" : {
+      "sci" : "Makaira Nigricans",
+      "colours" : [
+        "#9a7fa6", "#071b64", "#82c2dc", "#979877", "#a0a8fd"
+      ]
+    },
     "crocodile-icefish" : {
       "sci" : "Channichthyidae",
       "colours" : [

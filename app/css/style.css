@@ -8,10 +8,24 @@
   src: url("../fonts/Octanis-SansRoundedItalic.ttf");
 }
 
+@keyframes initi {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+#app {
+  animation: initi 5s;
+}
+
 body {
+  opacity:1;
   background-color: #fff;
-  padding: 75px 0 100px;
-  font-family: 'Octanis';
+  padding: 75px 0 0;
+  font-family: 'Sonder';
   font-size:20px;
   letter-spacing: 1px;
   background-image: url("../images/background.png");
@@ -33,13 +47,6 @@ body {
     padding-right:15px;
     background-size: 175vw auto;
   }
-}
-
-.main-container {
-  /*background-color: #fff;*/
-  /*-moz-box-shadow: 0 300px 50000px 180px #fff;
-  -webkit-box-shadow: 0 300px 50000px 180px #fff;
-  box-shadow: 0 300px 50000px 180px #fff;*/
 }
 
 .container {
@@ -66,6 +73,14 @@ body {
   header {
     padding-bottom: 20px;
   }
+}
+
+footer {
+  margin-top:80px;
+  text-align: center;
+  padding:80px 25vw;
+  background-color: #BEDFF7;
+  background: linear-gradient(white, #BEDFF7);
 }
 
 .ReactModal__Content .show-grid{
@@ -127,18 +142,22 @@ h2 {
   display: inline;
 }
 
+.small, small {
+  font-size: 75%;
+}
+
 .sci-name{
   bottom: 120px;
   left:120px;
 }
 
 /*.btn{
-  font-size:20px;
-  letter-spacing:1px;
-  position: absolute;
-  right: 10%;
-  bottom: 30px;
-  padding: 8px 20px;
+font-size:20px;
+letter-spacing:1px;
+position: absolute;
+right: 10%;
+bottom: 30px;
+padding: 8px 20px;
 }*/
 
 /* modal styles */
@@ -146,8 +165,8 @@ h2 {
   overflow: hidden;
 }
 
-/* ensure below are being applied */
 .modal-content {
+  font-family: 'Octanis';
   position: absolute;
   top: 5vh;
   bottom: 5vh;
@@ -156,7 +175,6 @@ h2 {
   border: none;
   background: #fff;
   overflow: auto;
-  /*-webkit-overflow-scrolling: touch;*/
   border-radius: 4px;
   outline: none;
   padding: 20px;
@@ -175,10 +193,10 @@ h2 {
 
 @media only screen and (max-width: 767px){
   .modal-content {
-    top: 1vh;
-    bottom: 1vh;
-    left: 1vw;
-    right: 1vw;
+    top: 10vh;
+    bottom: 10vh;
+    left: 10vw;
+    right: 10vw;
   }
 }
 
@@ -195,15 +213,6 @@ h2 {
   .modal-content img {
     width: 100%;
     height: auto;
-  }
-}
-
-@media only screen and (max-width: 767px){
-  .modal-content img {
-    top: 1vh;
-    bottom: 1vh;
-    left: 1vw;
-    right: 1vw;
   }
 }
 
@@ -233,7 +242,6 @@ h2 {
 .modal-content .fish-names {
   font-size: 30px;
   text-transform: uppercase;
-  /*font-weight: bold;*/
 }
 
 .modal-overlay {

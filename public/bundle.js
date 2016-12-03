@@ -86,78 +86,107 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
+	        'div',
+	        { className: 'page-wrapper' },
 	        _react2.default.createElement(
-	          'header',
+	          _reactBootstrap.Grid,
 	          null,
 	          _react2.default.createElement(
-	            'h1',
+	            'header',
 	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: '/' },
-	              _react2.default.createElement('img', { src: 'app/images/Logo.png', alt: 'the illustrated encyclopedia of fish' })
+	              'h1',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: '/' },
+	                _react2.default.createElement('img', { src: 'app/images/Logo.png', alt: 'the illustrated encyclopedia of fish' })
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'main',
+	            { className: 'container main-container' },
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'barracuda' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-parrotfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'paraya' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'hogfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'crocodile-icefish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-halibut' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'pirhana' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-marlin' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' })
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'main',
-	          { className: 'container main-container' },
+	          'footer',
+	          null,
 	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
+	            'p',
+	            null,
+	            'c/2016 sunday desert'
 	          ),
 	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'barracuda' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'blue-parrotfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'paraya' })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
-	            _react2.default.createElement(_Fish2.default, { name: 'hogfish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'crocodile-icefish' }),
-	            _react2.default.createElement(_Fish2.default, { name: 'atlantic-halibut' })
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'small',
+	              null,
+	              'the illustrated encyclopedia of fish is'
+	            )
 	          )
 	        )
 	      );
@@ -41846,14 +41875,10 @@
 	
 	      var fishName = name.replace(/-/g, ' ');
 	      var colourCode = _data2.default.fish[name].colours;
-	      var style = {
-	        backgroundColor: name
-	      };
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        console.log(colourCode),
 	        _react2.default.createElement(_FishImage2.default, { name: name }),
 	        _react2.default.createElement(
 	          'p',
@@ -41891,6 +41916,36 @@
 
 	module.exports = {
 		"fish": {
+			"pirhana": {
+				"sci": "Pygocentrus Nattereri",
+				"colours": [
+					"#ff8c27",
+					"#48736c",
+					"#5b6378",
+					"#ad0505",
+					"#39343a"
+				]
+			},
+			"mangrove-snapper": {
+				"sci": "Lutjanus Griseus",
+				"colours": [
+					"#373035",
+					"#d1a949",
+					"#6a170f",
+					"#87e9ef",
+					"#775289"
+				]
+			},
+			"blue-marlin": {
+				"sci": "Makaira Nigricans",
+				"colours": [
+					"#9a7fa6",
+					"#071b64",
+					"#82c2dc",
+					"#979877",
+					"#a0a8fd"
+				]
+			},
 			"crocodile-icefish": {
 				"sci": "Channichthyidae",
 				"colours": [

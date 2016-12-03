@@ -12,9 +12,6 @@ class ModalContents extends React.Component {
     const { name } = this.props;
     const fishName = name.replace(/-/g, ' ');
     const colourCode = data.fish[name].colours;
-    const style = {
-      backgroundColor: name
-    }
 
     return (
       <div>
