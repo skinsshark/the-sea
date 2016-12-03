@@ -1,8 +1,6 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Col } from 'react-bootstrap';
 
-class FishImage extends React.Component {
+class Logo extends React.Component{
   constructor(props) {
     super(props);
     this.state = { loaded: false };
@@ -15,25 +13,22 @@ class FishImage extends React.Component {
     this.setState({ loaded: false });
   }
   render () {
-    const { name, className } = this.props;
-    const basicProps = {
-      alt: name,
-    };
-    const imageURL = "app/images/fish/" + name + ".png";
+    const { className } = this.props;
     var styleClass = className ? className + ' img' : 'img';
     if (this.state.loaded) {
       styleClass += ' img-loaded';
     }
-
     return (
-        <img src={imageURL}
+      <a href="/">
+        <img src="app/images/Logo.png"
+          alt="the illustrated encyclopedia of fish"
           onLoad={this.handleImageLoaded.bind(this)}
           onError={this.handleImageErrored.bind(this)}
           className={styleClass}
-          {...basicProps}
-        />
+        />{console.log(styleClass)}
+      </a>
     );
   }
 }
 
-export default FishImage;
+export default Logo;

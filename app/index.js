@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Fish from './components/Fish';
+import Logo from './components/Logo';
 
 // TODO: remove all .DS_Stores
 
@@ -11,7 +12,7 @@ class App extends React.Component {
       <div className="page-wrapper">
         <Grid>
           <header>
-            <h1><a href="/"><img src="app/images/Logo.png" alt="the illustrated encyclopedia of fish"/></a></h1>
+            <h1><Logo /></h1>
           </header>
           <main className="container main-container">
             <Row className="show-grid">

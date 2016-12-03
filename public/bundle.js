@@ -63,6 +63,10 @@
 	
 	var _Fish2 = _interopRequireDefault(_Fish);
 	
+	var _Logo = __webpack_require__(/*! ./components/Logo */ 449);
+	
+	var _Logo2 = _interopRequireDefault(_Logo);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97,11 +101,7 @@
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: '/' },
-	                _react2.default.createElement('img', { src: 'app/images/Logo.png', alt: 'the illustrated encyclopedia of fish' })
-	              )
+	              _react2.default.createElement(_Logo2.default, null)
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -41796,23 +41796,45 @@
 	var FishImage = function (_React$Component) {
 	  _inherits(FishImage, _React$Component);
 	
-	  function FishImage() {
+	  function FishImage(props) {
 	    _classCallCheck(this, FishImage);
 	
-	    return _possibleConstructorReturn(this, (FishImage.__proto__ || Object.getPrototypeOf(FishImage)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (FishImage.__proto__ || Object.getPrototypeOf(FishImage)).call(this, props));
+	
+	    _this.state = { loaded: false };
+	    return _this;
 	  }
 	
 	  _createClass(FishImage, [{
+	    key: 'handleImageLoaded',
+	    value: function handleImageLoaded() {
+	      this.setState({ loaded: true });
+	    }
+	  }, {
+	    key: 'handleImageErrored',
+	    value: function handleImageErrored() {
+	      this.setState({ loaded: false });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var name = this.props.name;
+	      var _props = this.props;
+	      var name = _props.name;
+	      var className = _props.className;
 	
 	      var basicProps = {
 	        alt: name
 	      };
 	      var imageURL = "app/images/fish/" + name + ".png";
+	      var styleClass = className ? className + ' img' : 'img';
+	      if (this.state.loaded) {
+	        styleClass += ' img-loaded';
+	      }
 	
-	      return _react2.default.createElement('img', _extends({ src: imageURL
+	      return _react2.default.createElement('img', _extends({ src: imageURL,
+	        onLoad: this.handleImageLoaded.bind(this),
+	        onError: this.handleImageErrored.bind(this),
+	        className: styleClass
 	      }, basicProps));
 	    }
 	  }]);
@@ -44241,6 +44263,83 @@
 	  else this.add(className)
 	}
 
+
+/***/ },
+/* 449 */
+/*!********************************!*\
+  !*** ./app/components/Logo.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Logo = function (_React$Component) {
+	  _inherits(Logo, _React$Component);
+	
+	  function Logo(props) {
+	    _classCallCheck(this, Logo);
+	
+	    var _this = _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).call(this, props));
+	
+	    _this.state = { loaded: false };
+	    return _this;
+	  }
+	
+	  _createClass(Logo, [{
+	    key: 'handleImageLoaded',
+	    value: function handleImageLoaded() {
+	      this.setState({ loaded: true });
+	    }
+	  }, {
+	    key: 'handleImageErrored',
+	    value: function handleImageErrored() {
+	      this.setState({ loaded: false });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var className = this.props.className;
+	
+	      var styleClass = className ? className + ' img' : 'img';
+	      if (this.state.loaded) {
+	        styleClass += ' img-loaded';
+	      }
+	      return _react2.default.createElement(
+	        'a',
+	        { href: '/' },
+	        _react2.default.createElement('img', { src: 'app/images/Logo.png',
+	          alt: 'the illustrated encyclopedia of fish',
+	          onLoad: this.handleImageLoaded.bind(this),
+	          onError: this.handleImageErrored.bind(this),
+	          className: styleClass
+	        }),
+	        console.log(styleClass)
+	      );
+	    }
+	  }]);
+	
+	  return Logo;
+	}(_react2.default.Component);
+	
+	exports.default = Logo;
 
 /***/ }
 /******/ ]);
