@@ -7,9 +7,30 @@ import Logo from './components/Logo';
 // TODO: remove all .DS_Stores
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { loaded: false };
+  }
+
+  handleImageLoaded() {
+    this.setState({ loaded: true });
+  }
+
+  handleImageErrored() {
+    this.setState({ loaded: false });
+  }
+
   render () {
+    const { className } = this.props;
+    var styleClass = className ? className + ' img page-wrapper' : 'img page-wrapper';
+    if (this.state.loaded) {
+      styleClass += ' img-loaded';
+    }
     return (
-      <div className="page-wrapper">
+      <div
+      onLoad={this.handleImageLoaded.bind(this)}
+      onError={this.handleImageErrored.bind(this)}
+      className={styleClass}>
         <Grid>
           <header>
             <h1><Logo /></h1>

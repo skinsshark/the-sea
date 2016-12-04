@@ -80,18 +80,40 @@
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 	
-	  function App() {
+	  function App(props) {
 	    _classCallCheck(this, App);
 	
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	    _this.state = { loaded: false };
+	    return _this;
 	  }
 	
 	  _createClass(App, [{
+	    key: 'handleImageLoaded',
+	    value: function handleImageLoaded() {
+	      this.setState({ loaded: true });
+	    }
+	  }, {
+	    key: 'handleImageErrored',
+	    value: function handleImageErrored() {
+	      this.setState({ loaded: false });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var className = this.props.className;
+	
+	      var styleClass = className ? className + ' img page-wrapper' : 'img page-wrapper';
+	      if (this.state.loaded) {
+	        styleClass += ' img-loaded';
+	      }
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'page-wrapper' },
+	        {
+	          onLoad: this.handleImageLoaded.bind(this),
+	          onError: this.handleImageErrored.bind(this),
+	          className: styleClass },
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
 	          null,
@@ -41796,45 +41818,23 @@
 	var FishImage = function (_React$Component) {
 	  _inherits(FishImage, _React$Component);
 	
-	  function FishImage(props) {
+	  function FishImage() {
 	    _classCallCheck(this, FishImage);
 	
-	    var _this = _possibleConstructorReturn(this, (FishImage.__proto__ || Object.getPrototypeOf(FishImage)).call(this, props));
-	
-	    _this.state = { loaded: false };
-	    return _this;
+	    return _possibleConstructorReturn(this, (FishImage.__proto__ || Object.getPrototypeOf(FishImage)).apply(this, arguments));
 	  }
 	
 	  _createClass(FishImage, [{
-	    key: 'handleImageLoaded',
-	    value: function handleImageLoaded() {
-	      this.setState({ loaded: true });
-	    }
-	  }, {
-	    key: 'handleImageErrored',
-	    value: function handleImageErrored() {
-	      this.setState({ loaded: false });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _props = this.props;
-	      var name = _props.name;
-	      var className = _props.className;
+	      var name = this.props.name;
 	
 	      var basicProps = {
 	        alt: name
 	      };
 	      var imageURL = "app/images/fish/" + name + ".png";
-	      var styleClass = className ? className + ' img' : 'img';
-	      if (this.state.loaded) {
-	        styleClass += ' img-loaded';
-	      }
 	
-	      return _react2.default.createElement('img', _extends({ src: imageURL,
-	        onLoad: this.handleImageLoaded.bind(this),
-	        onError: this.handleImageErrored.bind(this),
-	        className: styleClass
+	      return _react2.default.createElement('img', _extends({ src: imageURL
 	      }, basicProps));
 	    }
 	  }]);
@@ -41900,7 +41900,7 @@
 	
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'modal-wrapper' },
 	        _react2.default.createElement(_FishImage2.default, { name: name }),
 	        _react2.default.createElement(
 	          'p',
@@ -42094,7 +42094,7 @@
 					"#988e68",
 					"#2b3533",
 					"#8b5c9c",
-					"#8b5c9c",
+					"#4d746a",
 					"#65544e"
 				]
 			},
@@ -42131,11 +42131,11 @@
 			"asian-catfish": {
 				"sci": "Horabagrus Brachysoma",
 				"colours": [
-					"#c8a692",
-					"#c8a692",
-					"#72cbb7",
-					"#72cbb7",
-					"#f2a64a"
+					"#ea2f2f",
+					"#f4aa51",
+					"#e4c7b7",
+					"#312f29",
+					"#90e4d9"
 				]
 			},
 			"mahi-mahi": {
@@ -42154,7 +42154,7 @@
 					"#0b1213",
 					"#238585",
 					"#79d8eb",
-					"#79d8eb",
+					"#fff2d0",
 					"#3c5d71"
 				]
 			},
@@ -42162,7 +42162,7 @@
 				"sci": "Sarda Sarda",
 				"colours": [
 					"#fad38a",
-					"#fad38a",
+					"#3ed5b7",
 					"#6b5784",
 					"#ffdef8",
 					"#f8c0c0"
@@ -42204,7 +42204,7 @@
 					"#42a1dd",
 					"#9fe4ef",
 					"#140f4e",
-					"#140f4e",
+					"#3e96d5",
 					"#ff91ea"
 				]
 			},
@@ -44271,7 +44271,7 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -44294,44 +44294,21 @@
 	var Logo = function (_React$Component) {
 	  _inherits(Logo, _React$Component);
 	
-	  function Logo(props) {
+	  function Logo() {
 	    _classCallCheck(this, Logo);
 	
-	    var _this = _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).call(this, props));
-	
-	    _this.state = { loaded: false };
-	    return _this;
+	    return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
 	  }
 	
 	  _createClass(Logo, [{
-	    key: 'handleImageLoaded',
-	    value: function handleImageLoaded() {
-	      this.setState({ loaded: true });
-	    }
-	  }, {
-	    key: 'handleImageErrored',
-	    value: function handleImageErrored() {
-	      this.setState({ loaded: false });
-	    }
-	  }, {
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
-	      var className = this.props.className;
-	
-	      var styleClass = className ? className + ' img' : 'img';
-	      if (this.state.loaded) {
-	        styleClass += ' img-loaded';
-	      }
 	      return _react2.default.createElement(
-	        'a',
-	        { href: '/' },
-	        _react2.default.createElement('img', { src: 'app/images/Logo.png',
-	          alt: 'the illustrated encyclopedia of fish',
-	          onLoad: this.handleImageLoaded.bind(this),
-	          onError: this.handleImageErrored.bind(this),
-	          className: styleClass
-	        }),
-	        console.log(styleClass)
+	        "a",
+	        { href: "/" },
+	        _react2.default.createElement("img", { src: "app/images/Logo.png",
+	          alt: "the illustrated encyclopedia of fish"
+	        })
 	      );
 	    }
 	  }]);

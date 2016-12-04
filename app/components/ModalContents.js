@@ -14,7 +14,7 @@ class ModalContents extends React.Component {
     const colourCode = data.fish[name].colours;
 
     return (
-      <div>
+      <div className="modal-wrapper">
         <FishImage name={name} />
         <p className="fish-names">
           <span className="en-fish">{fishName}</span> {data.fish[name].sci}

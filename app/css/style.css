@@ -14,7 +14,7 @@
 }
 
 .img-loaded {
-  opacity: 1; 
+  opacity: 1;
 }
 
 body {
@@ -156,9 +156,19 @@ bottom: 30px;
 padding: 8px 20px;
 }*/
 
+@media only screen and (max-width:767px){
+  main img {
+    padding: 20px 0;
+  }
+}
+
 /* modal styles */
 .ReactModal__Body--open {
   overflow: hidden;
+}
+
+.modal-wrapper {
+  vertical-align: middle;
 }
 
 .modal-content {
@@ -207,6 +217,13 @@ padding: 8px 20px;
 
 @media only screen and (max-width: 991px){
   .modal-content img {
+    height: 70%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .modal-content img {
     width: 100%;
     height: auto;
   }
@@ -220,13 +237,20 @@ padding: 8px 20px;
 
 .schemes {
   margin-top: 20px;
+  padding: 0;
 }
 
 .modal-content .scheme {
   width:50px;
   height: 50px;
   display:inline-block;
-  margin: 0 70px;
+  margin: 0 5vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal-content .scheme {
+    margin: 0;
+  }
 }
 
 .modal-content .en-fish {

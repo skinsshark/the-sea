@@ -93,7 +93,7 @@
     "barracuda" : {
       "sci" : "Sphyraena",
       "colours" : [
-        "#988e68", "#2b3533", "#8b5c9c", "#8b5c9c", "#65544e"
+        "#988e68", "#2b3533", "#8b5c9c", "#4d746a", "#65544e"
       ]
     },
     "tiger-queen-anthias" : {
@@ -117,7 +117,7 @@
     "asian-catfish" : {
       "sci" : "Horabagrus Brachysoma",
       "colours" : [
-        "#c8a692", "#c8a692", "#72cbb7", "#72cbb7", "#f2a64a"
+        "#ea2f2f", "#f4aa51", "#e4c7b7", "#312f29", "#90e4d9"
       ]
     },
     "mahi-mahi" : {
@@ -129,13 +129,13 @@
     "atlantic-mackerel" : {
       "sci" : "Scomber Scombrus",
       "colours" : [
-        "#0b1213", "#238585", "#79d8eb", "#79d8eb", "#3c5d71"
+        "#0b1213", "#238585", "#79d8eb", "#fff2d0", "#3c5d71"
       ]
     },
     "bonito" : {
       "sci" : "Sarda Sarda",
       "colours" : [
-        "#fad38a", "#fad38a", "#6b5784", "#ffdef8", "#f8c0c0"
+        "#fad38a", "#3ed5b7", "#6b5784", "#ffdef8", "#f8c0c0"
       ]
     },
     "red-coris-wrasse" : {
@@ -159,7 +159,7 @@
     "bluefin-tuna" : {
       "sci" : "Thunnus Thynnus",
       "colours" : [
-        "#42a1dd", "#9fe4ef", "#140f4e", "#140f4e", "#ff91ea"
+        "#42a1dd", "#9fe4ef", "#140f4e", "#3e96d5", "#ff91ea"
       ]
     },
     "asian-arowana" : {
