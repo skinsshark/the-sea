@@ -1,5 +1,41 @@
 {
   "fish" : {
+    "giant-snakehead" : {
+      "sci" : "Channa Micropeltes",
+      "colours" : [
+        "#b4a4a1", "#85548f", "#037c64", "#8fbdb6", "#8ff135"
+      ]
+    },
+    "orange-spotted-sunfish" : {
+      "sci" : "Lepomis Humilis",
+      "colours" : [
+        "#ff4a01", "#337c7f", "#8f6e94", "#7ec195", "#e9e49a"
+      ]
+    },
+    "four-horn-sculpin" : {
+      "sci" : "Myoxocephalus Quadricornis",
+      "colours" : [
+        "#472a24", "#282d08", "#31260a", "#644820", "#cbaacd"
+      ]
+    },
+    "mudskipper" : {
+      "sci" : "Oxudercinae",
+      "colours" : [
+        "#98f0ed", "#bf8e56", "#2b1822", "#c6887e", "#dbb495"
+      ]
+    },
+    "alligator-gar" : {
+      "sci" : "Atractosteus Spatula",
+      "colours" : [
+        "#0b0d0e", "#5b9b7a", "#ff8c9f", "#b198c0", "#525d6d"
+      ]
+    },
+    "flying-gurnard" : {
+      "sci" : "Dactylopterus Volitans",
+      "colours" : [
+        "#ffbdf6", "#cd4f10", "#d9bc52", "#04511d", "#348bc0"
+      ]
+    },
     "pirhana" : {
       "sci" : "Pygocentrus Nattereri",
       "colours" : [

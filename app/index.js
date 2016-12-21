@@ -7,7 +7,7 @@ import Logo from './components/Logo';
 // TODO: remove all .DS_Stores
 
 class App extends React.Component {
-  constructor(props) {
+  constructor( props ) {
     super(props);
     this.state = { loaded: false };
   }
@@ -37,16 +37,22 @@ class App extends React.Component {
           </header>
           <main className="container main-container">
             <Row className="show-grid">
+              <Fish name="bonito"/>
+              <Fish name="sockeye-salmon"/>
+              <Fish name="orange-spotted-sunfish"/>
+              <Fish name="giant-snakehead"/>
+            </Row>
+            <Row className="show-grid">
+              <Fish name="mudskipper"/>
+              <Fish name="four-horn-sculpin"/>
+              <Fish name="red-coris-wrasse"/>
+              <Fish name="giant-gourami"/>
+            </Row>
+            <Row className="show-grid">
               <Fish name="blue-ram-cichlid"/>
               <Fish name="mahi-mahi"/>
               <Fish name="yellowtail-kingfish"/>
               <Fish name="yellow-boxfish"/>
-            </Row>
-            <Row className="show-grid">
-              <Fish name="bonito"/>
-              <Fish name="sockeye-salmon"/>
-              <Fish name="red-coris-wrasse"/>
-              <Fish name="giant-gourami"/>
             </Row>
             <Row className="show-grid">
               <Fish name="atlantic-mackerel"/>
@@ -81,6 +87,8 @@ class App extends React.Component {
             <Row className="show-grid">
               <Fish name="blue-marlin"/>
               <Fish name="mangrove-snapper"/>
+              <Fish name="alligator-gar"/>
+              <Fish name="flying-gurnard"/>
             </Row>
           </main>
         </Grid>

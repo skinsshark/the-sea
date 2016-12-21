@@ -38,6 +38,9 @@ class Fish extends React.Component {
         <Modal isOpen={this.state.open} onRequestClose={this.closeModal}
         className="modal-content"
         overlayClassName="modal-overlay">
+          <span className="mobile-back visible-sm visible-xs glyphicon glyphicon-remove"
+          aria-hidden="true"
+          onClick={this.closeModal}></span>
           <ModalContents name={name} />
           {/*<button className="btn btn-info visible-sm visible-xs" onClick={this.closeModal}>Close</button>*/}
         </Modal>

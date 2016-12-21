@@ -132,18 +132,26 @@
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
+	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'giant-snakehead' })
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'four-horn-sculpin' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
@@ -189,7 +197,9 @@
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
 	              _react2.default.createElement(_Fish2.default, { name: 'blue-marlin' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' })
+	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'alligator-gar' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'flying-gurnard' })
 	            )
 	          )
 	        ),
@@ -41771,6 +41781,9 @@
 	          { isOpen: this.state.open, onRequestClose: this.closeModal,
 	            className: 'modal-content',
 	            overlayClassName: 'modal-overlay' },
+	          _react2.default.createElement('span', { className: 'mobile-back visible-sm visible-xs glyphicon glyphicon-remove',
+	            'aria-hidden': 'true',
+	            onClick: this.closeModal }),
 	          _react2.default.createElement(_ModalContents2.default, { name: name })
 	        )
 	      );
@@ -41938,6 +41951,66 @@
 
 	module.exports = {
 		"fish": {
+			"giant-snakehead": {
+				"sci": "Channa Micropeltes",
+				"colours": [
+					"#b4a4a1",
+					"#85548f",
+					"#037c64",
+					"#8fbdb6",
+					"#8ff135"
+				]
+			},
+			"orange-spotted-sunfish": {
+				"sci": "Lepomis Humilis",
+				"colours": [
+					"#ff4a01",
+					"#337c7f",
+					"#8f6e94",
+					"#7ec195",
+					"#e9e49a"
+				]
+			},
+			"four-horn-sculpin": {
+				"sci": "Myoxocephalus Quadricornis",
+				"colours": [
+					"#472a24",
+					"#282d08",
+					"#31260a",
+					"#644820",
+					"#cbaacd"
+				]
+			},
+			"mudskipper": {
+				"sci": "Oxudercinae",
+				"colours": [
+					"#98f0ed",
+					"#bf8e56",
+					"#2b1822",
+					"#c6887e",
+					"#dbb495"
+				]
+			},
+			"alligator-gar": {
+				"sci": "Atractosteus Spatula",
+				"colours": [
+					"#0b0d0e",
+					"#5b9b7a",
+					"#ff8c9f",
+					"#b198c0",
+					"#525d6d"
+				]
+			},
+			"flying-gurnard": {
+				"sci": "Dactylopterus Volitans",
+				"colours": [
+					"#ffbdf6",
+					"#cd4f10",
+					"#d9bc52",
+					"#04511d",
+					"#348bc0"
+				]
+			},
 			"pirhana": {
 				"sci": "Pygocentrus Nattereri",
 				"colours": [
