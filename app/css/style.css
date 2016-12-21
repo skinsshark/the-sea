@@ -1,3 +1,8 @@
+/** 
+* TODO: responsive font sizes, 
+* and image seems to get minorly skewed at a breakpoint check it out a$ap 
+*/
+
 /** load in fonts **/
 @font-face {
 	font-family: 'Sonder';
@@ -227,17 +232,26 @@ padding: 8px 20px;
 .modal-content img {
 	height: 75%;
 	max-width: 100%;
-  width: auto;
+  	width: auto;
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	position: relative;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .modal-content img {
-    width:100%;
-  	height: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content img {
+    max-width: none;
+    width: 120vw;
   }
 }
 
@@ -245,8 +259,6 @@ padding: 8px 20px;
 	.modal-content img {
     max-width: none;
     /* no max width line */
-		width: 120vw;
-		height: auto;
     /*top: 100px;*/
     /*margin-bottom: 0;*/
     margin-bottom:30px;
