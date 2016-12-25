@@ -30,8 +30,8 @@ class IEF extends React.Component {
     }
     return (
       <div className="page-wrapper">
-      <App/>
-      {content}
+        <App/>
+        {content}
       </div>
     );
   }

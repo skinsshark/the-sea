@@ -77,6 +77,8 @@ footer {
 
 img {
 	width: 100%;
+	font-size:25px;
+	font-family: 'Arial';
 }
 
 .img {
@@ -91,8 +93,6 @@ img {
 /* TYPOGRAPHY */
 h1 {
 	text-align: center;
-	font-family: 'Arvil';
-	font-size: 75px;
 	position: relative;
 	letter-spacing: 3px;
 }
@@ -163,6 +163,12 @@ padding: 8px 20px;
 	margin-right: 10px;
 }
 
+@media only screen and (max-width: 991px) {
+  .modal-content .en-fish {
+    font-size:4vw;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .modal-content .en-fish {
     font-size:5vw;
@@ -172,6 +178,12 @@ padding: 8px 20px;
 .modal-content .fish-names {
 	font-size: 30px;
 	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 991px) {
+  .modal-content .fish-names {
+  	font-size: 3vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -243,7 +255,7 @@ padding: 8px 20px;
 .modal-content img {
 	height: 75%;
 	max-width: 100%;
-  	width: auto;
+  width: auto;
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -262,7 +274,7 @@ padding: 8px 20px;
 @media only screen and (max-width: 600px) {
   .modal-content img {
     max-width: none;
-    width: 120vw;
+    width: 105vw;
   }
 }
 
