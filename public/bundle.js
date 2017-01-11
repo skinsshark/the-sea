@@ -42755,9 +42755,9 @@
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'indo-pacific-sailfish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'giant-snakehead' })
 	            ),
 	            _react2.default.createElement(
@@ -42765,7 +42765,7 @@
 	              { className: 'show-grid' },
 	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'four-horn-sculpin' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'sloanes-viperfish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
 	            ),
 	            _react2.default.createElement(
@@ -42823,6 +42823,13 @@
 	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'alligator-gar' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'flying-gurnard' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'european-pilchard' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' })
 	            )
 	          )
 	        ),
@@ -43134,6 +43141,36 @@
 
 	module.exports = {
 		"fish": {
+			"european-pilchard": {
+				"sci": "Sardina Pilchardus",
+				"colours": [
+					"#fff693",
+					"#ffc7ed",
+					"#244059",
+					"#06111d",
+					"#caa269"
+				]
+			},
+			"sloanes-viperfish": {
+				"sci": "Chauliodus Sloani",
+				"colours": [
+					"#097476",
+					"#83dfe0",
+					"#1e2e56",
+					"#f76d84",
+					"#fff716"
+				]
+			},
+			"indo-pacific-sailfish": {
+				"sci": "Istiophorus Platypterus",
+				"colours": [
+					"#544f8a",
+					"#78abb9",
+					"#deb53c",
+					"#8a41a2",
+					"#4a4151"
+				]
+			},
 			"giant-snakehead": {
 				"sci": "Channa Micropeltes",
 				"colours": [

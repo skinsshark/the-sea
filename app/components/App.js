@@ -38,15 +38,15 @@ class App extends React.Component {
           </header>
           <main className="container main-container">
             <Row className="show-grid">
-              <Fish name="bonito"/>
+              <Fish name="red-coris-wrasse"/>
               <Fish name="sockeye-salmon"/>
-              <Fish name="orange-spotted-sunfish"/>
+              <Fish name="indo-pacific-sailfish"/>
               <Fish name="giant-snakehead"/>
             </Row>
             <Row className="show-grid">
               <Fish name="mudskipper"/>
               <Fish name="four-horn-sculpin"/>
-              <Fish name="red-coris-wrasse"/>
+              <Fish name="sloanes-viperfish"/>
               <Fish name="giant-gourami"/>
             </Row>
             <Row className="show-grid">
@@ -90,6 +90,11 @@ class App extends React.Component {
               <Fish name="mangrove-snapper"/>
               <Fish name="alligator-gar"/>
               <Fish name="flying-gurnard"/>
+            </Row>
+            <Row className="show-grid">
+              <Fish name="european-pilchard"/>
+              <Fish name="bonito"/>
+              <Fish name="orange-spotted-sunfish"/>
             </Row>
           </main>
         </Grid>

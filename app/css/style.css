@@ -87,7 +87,7 @@ img {
 }
 
 .img-fish {
-	background-image: url("../images/modal-bg.png");
+	background-image: url("../images/modal-bg.png"); /* temp loader */
 	background-size: cover;
 }
 

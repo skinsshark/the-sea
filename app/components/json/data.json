@@ -1,5 +1,23 @@
 {
   "fish" : {
+    "european-pilchard" : {
+      "sci" : "Sardina Pilchardus",
+      "colours" : [
+        "#fff693", "#ffc7ed", "#244059", "#06111d", "#caa269"
+      ]
+    },
+    "sloanes-viperfish" : {
+      "sci" : "Chauliodus Sloani",
+      "colours" : [
+        "#097476", "#83dfe0", "#1e2e56", "#f76d84", "#fff716"
+      ]
+    },
+    "indo-pacific-sailfish" : {
+      "sci" : "Istiophorus Platypterus",
+      "colours" : [
+        "#544f8a", "#78abb9", "#deb53c", "#8a41a2", "#4a4151"
+      ]
+    },
     "giant-snakehead" : {
       "sci" : "Channa Micropeltes",
       "colours" : [
