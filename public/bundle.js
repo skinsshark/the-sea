@@ -43022,7 +43022,7 @@
 	        alt: name
 	      };
 	      var imageURL = "app/images/fish/" + name + ".png";
-	      var styleClass = className ? className + ' img' : 'img';
+	      var styleClass = className ? className + ' img img-fish' : 'img img-fish';
 	      if (this.state.loaded) {
 	        styleClass += ' img-loaded';
 	      }

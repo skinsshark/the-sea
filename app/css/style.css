@@ -86,8 +86,14 @@ img {
 	transition: opacity 2s;
 }
 
+.img-fish {
+	background-image: url("../images/modal-bg.png");
+	background-size: cover;
+}
+
 .img-loaded {
 	opacity: 1;
+	background: none;
 }
 
 /* TYPOGRAPHY */
