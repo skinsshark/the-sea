@@ -186,6 +186,12 @@ padding: 8px 20px;
 	text-transform: uppercase;
 }
 
+@media only screen and (min-width: 1500px) {
+  .modal-content .fish-names {
+  	margin-bottom: 5vh;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .modal-content .fish-names {
   	font-size: 3vw;
