@@ -110,14 +110,13 @@
 	    key: 'render',
 	    value: function render() {
 	      var content = null;
-	      if (this.state.show == null) {
-	        var _content = _react2.default.createElement(_App2.default, { onLoad: this.onHide() });
-	      }
+	      // if (this.state.show == null) {
+	      //   const content = <App onLoad={this.onHide()}/>;
+	      // }
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'page-wrapper' },
-	        _react2.default.createElement(_App2.default, null),
-	        content
+	        _react2.default.createElement(_App2.default, null)
 	      );
 	    }
 	  }]);
@@ -42829,7 +42828,8 @@
 	              { className: 'show-grid' },
 	              _react2.default.createElement(_Fish2.default, { name: 'european-pilchard' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' })
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-roughy' })
 	            )
 	          )
 	        ),
@@ -43090,12 +43090,22 @@
 	  function ModalContents() {
 	    _classCallCheck(this, ModalContents);
 	
-	    return _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
+	    var _this = _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
+	
+	    _this.copyColour = _this.copyColour.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(ModalContents, [{
+	    key: 'copyColour',
+	    value: function copyColour(name) {
+	      window.prompt("Copy to clipboard with (cmd/ctrl) + c and hit enter", name);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      var name = this.props.name;
 	
 	      var fishName = name.replace(/-/g, ' ');
@@ -43120,7 +43130,9 @@
 	          'ul',
 	          { className: 'schemes' },
 	          colourCode.map(function (name, i) {
-	            return _react2.default.createElement('li', { key: i, style: { backgroundColor: name }, className: 'scheme' });
+	            return _react2.default.createElement('li', { key: i, style: { backgroundColor: name }, className: 'scheme', onClick: function onClick() {
+	                return _this2.copyColour(name);
+	              } });
 	          })
 	        )
 	      );
@@ -43141,6 +43153,16 @@
 
 	module.exports = {
 		"fish": {
+			"orange-roughy": {
+				"sci": "Hoplostethus Atlanticus",
+				"colours": [
+					"#e24a22",
+					"#d71e19",
+					"#987a9f",
+					"#fff09a",
+					"#491413"
+				]
+			},
 			"european-pilchard": {
 				"sci": "Sardina Pilchardus",
 				"colours": [

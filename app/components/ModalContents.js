@@ -6,6 +6,11 @@ import { Row, Col } from 'react-bootstrap';
 class ModalContents extends React.Component {
   constructor() {
     super();
+    this.copyColour = this.copyColour.bind(this);
+  }
+
+  copyColour(name) {
+    window.prompt("Copy to clipboard with (cmd/ctrl) + c and hit enter", name);
   }
 
   render() {
@@ -20,8 +25,8 @@ class ModalContents extends React.Component {
           <span className="en-fish">{fishName}</span> {data.fish[name].sci}
         </p>
         <ul className="schemes">
-          {colourCode.map(function(name, i){
-            return <li key={i} style={{backgroundColor: name}} className="scheme"></li>;
+          {colourCode.map((name, i)=>{
+            return <li key={i} style={{backgroundColor: name}} className="scheme" onClick={() => this.copyColour(name)}></li>;
           })}
         </ul>
       </div>

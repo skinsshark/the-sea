@@ -95,6 +95,7 @@ class App extends React.Component {
               <Fish name="european-pilchard"/>
               <Fish name="bonito"/>
               <Fish name="orange-spotted-sunfish"/>
+              <Fish name="orange-roughy"/>
             </Row>
           </main>
         </Grid>

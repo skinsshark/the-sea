@@ -1,5 +1,11 @@
 {
   "fish" : {
+    "orange-roughy" : {
+      "sci" : "Hoplostethus Atlanticus",
+      "colours" : [
+        "#e24a22", "#d71e19", "#987a9f", "#fff09a", "#491413"
+      ]
+    },
     "european-pilchard" : {
       "sci" : "Sardina Pilchardus",
       "colours" : [

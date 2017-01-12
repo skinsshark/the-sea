@@ -25,13 +25,13 @@ class IEF extends React.Component {
 
   render () {
     const content = null;
-    if (this.state.show == null) {
-      const content = <App onLoad={this.onHide()}/>;
-    }
+    // if (this.state.show == null) {
+    //   const content = <App onLoad={this.onHide()}/>;
+    // }
     return (
       <div className="page-wrapper">
         <App/>
-        {content}
+        {/*{content}*/}
       </div>
     );
   }
