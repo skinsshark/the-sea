@@ -1,5 +1,41 @@
 {
   "fish" : {
+    "flying-fish" : {
+      "sci" : "Cheilopogon Melanurus",
+      "colours" : [
+        "#7c5a6c", "#a7a061", "#614b6e", "#62503c", "#7a8da5"
+      ]
+    },
+    "yellowmargin-triggerfish" : {
+      "sci" : "Pseudobalistes Flavimarginatus",
+      "colours" : [
+        "#f9ed81", "#0055c4", "#e8bcf5", "#a339e5", "#ffb700"
+      ]
+    },
+    "paroon-shark" : {
+      "sci" : "Pangasius Sanitwongsei",
+      "colours" : [
+        "#92aba9", "#ad8ba6", "#4b3d50", "#97ffe8", "#745d73"
+      ]
+    },
+    "milkfish" : {
+      "sci" : "Chanos Chanos",
+      "colours" : [
+        "#64aed1", "#7effff", "#776f81", "#1a566e", "#20495e"
+      ]
+    },
+    "diamond-trevally" : {
+      "sci" : "Alectis Indica",
+      "colours" : [
+        "#dc83f2", "#526f6b", "#61ea9d", "#aae4ff", "#bccd89"
+      ]
+    },
+    "california-sheephead" : {
+      "sci" : "Semicossyphus Pulcher",
+      "colours" : [
+        "#7c2929", "#a95f5f", "#a78b8b", "#aca4a4", "#1a1919"
+      ]
+    },
     "orange-roughy" : {
       "sci" : "Hoplostethus Atlanticus",
       "colours" : [

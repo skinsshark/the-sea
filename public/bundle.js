@@ -42754,6 +42754,14 @@
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'diamond-trevally' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'california-sheephead' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'milkfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'paroon-shark' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
 	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'indo-pacific-sailfish' }),
@@ -42762,7 +42770,7 @@
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellowmargin-triggerfish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'four-horn-sculpin' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'sloanes-viperfish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
@@ -42819,7 +42827,7 @@
 	              _reactBootstrap.Row,
 	              { className: 'show-grid' },
 	              _react2.default.createElement(_Fish2.default, { name: 'blue-marlin' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'flying-fish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'alligator-gar' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'flying-gurnard' })
 	            ),
@@ -42830,6 +42838,12 @@
 	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
 	              _react2.default.createElement(_Fish2.default, { name: 'orange-roughy' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' })
 	            )
 	          )
 	        ),
@@ -43153,6 +43167,66 @@
 
 	module.exports = {
 		"fish": {
+			"flying-fish": {
+				"sci": "Cheilopogon Melanurus",
+				"colours": [
+					"#7c5a6c",
+					"#a7a061",
+					"#614b6e",
+					"#62503c",
+					"#7a8da5"
+				]
+			},
+			"yellowmargin-triggerfish": {
+				"sci": "Pseudobalistes Flavimarginatus",
+				"colours": [
+					"#f9ed81",
+					"#0055c4",
+					"#e8bcf5",
+					"#a339e5",
+					"#ffb700"
+				]
+			},
+			"paroon-shark": {
+				"sci": "Pangasius Sanitwongsei",
+				"colours": [
+					"#92aba9",
+					"#ad8ba6",
+					"#4b3d50",
+					"#97ffe8",
+					"#745d73"
+				]
+			},
+			"milkfish": {
+				"sci": "Chanos Chanos",
+				"colours": [
+					"#64aed1",
+					"#7effff",
+					"#776f81",
+					"#1a566e",
+					"#20495e"
+				]
+			},
+			"diamond-trevally": {
+				"sci": "Alectis Indica",
+				"colours": [
+					"#dc83f2",
+					"#526f6b",
+					"#61ea9d",
+					"#aae4ff",
+					"#bccd89"
+				]
+			},
+			"california-sheephead": {
+				"sci": "Semicossyphus Pulcher",
+				"colours": [
+					"#7c2929",
+					"#a95f5f",
+					"#a78b8b",
+					"#aca4a4",
+					"#1a1919"
+				]
+			},
 			"orange-roughy": {
 				"sci": "Hoplostethus Atlanticus",
 				"colours": [
