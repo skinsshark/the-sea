@@ -1,5 +1,41 @@
 {
   "fish" : {
+    "armored-stickleback" : {
+      "sci" : "Indostomus Paradoxus",
+      "colours" : [
+        "#6e582f", "#691700", "#999451", "#d77717", "#4e9b98"
+      ]
+    },
+    "ballyhoo" : {
+      "sci" : "Hemiramphus Brasiliensis",
+      "colours" : [
+        "#4a73e7", "#40c5b7", "#e7cb54", "#eee5d3", "#2ce887"
+      ]
+    },
+    "blackfin-scad" : {
+      "sci" : "Alepes Melanoptera",
+      "colours" : [
+        "#9fe0e8", "#bdfeff", "#c3c5f0", "#ffb07a", "#281e77"
+      ]
+    },
+    "red-roman" : {
+      "sci" : "Chrysoblephus Laticeps",
+      "colours" : [
+        "#fa6422", "#c90c0c", "#8d0809", "#c97574", "#ffec81"
+      ]
+    },
+    "rouget-barbet" : {
+      "sci" : "Mullus Surmuletus",
+      "colours" : [
+        "#fff6e4", "#dd5d3a", "#a12b1f", "#bd243e", "#ede257"
+      ]
+    },
+    "zander" : {
+      "sci" : "Sander Lucioperca",
+      "colours" : [
+        "#c6c186", "#3c3e34", "#45596c", "#616089", "#ddc374"
+      ]
+    },
     "flying-fish" : {
       "sci" : "Cheilopogon Melanurus",
       "colours" : [

@@ -42,7 +42,6 @@ class Fish extends React.Component {
           aria-hidden="true"
           onClick={this.closeModal}></span>
           <ModalContents name={name} />
-          {/*<button className="btn btn-info visible-sm visible-xs" onClick={this.closeModal}>Close</button>*/}
         </Modal>
       </Col>
     );

@@ -1,5 +1,4 @@
 import React from 'react';
-import Loading from 'react-loading-bar'
 import { render } from 'react-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Fish from './components/Fish';
@@ -11,24 +10,21 @@ class App extends React.Component {
   constructor( props ) {
     super(props);
     this.state = {
-        loading: true
-      };
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 4500);
+  }
+
+  render() {
+    const { loading } = this.state;
+
+    if(loading) {
+      return null;
     }
 
-    componentDidMount() {
-      setTimeout(() => this.setState({ loading: false }), 4500);
-    }
-
-    render() {
-      const { loading } = this.state;
-
-      if(loading) {
-        return null; // render null when app is not ready
-      }
-
-    // if (this.state.show == null) {
-    //   const content = <App onLoad={this.onHide()}/>;
-    // }
     return (
       <div className="page-wrapper">
         <Grid>
@@ -79,6 +75,12 @@ class App extends React.Component {
               <Fish name="paraya"/>
             </Row>
             <Row className="show-grid">
+              <Fish name="red-roman"/>
+              <Fish name="zander"/>
+              <Fish name="ballyhoo"/>
+              <Fish name="rouget-barbet"/>
+            </Row>
+            <Row className="show-grid">
               <Fish name="goblin-shark"/>
               <Fish name="humpback-anglerfish"/>
               <Fish name="goliath-grouper"/>
@@ -104,6 +106,8 @@ class App extends React.Component {
             </Row>
             <Row className="show-grid">
               <Fish name="mudskipper"/>
+              <Fish name="blackfin-scad"/>
+              <Fish name="armored-stickleback"/>
               <Fish name="mangrove-snapper"/>
             </Row>
           </main>
