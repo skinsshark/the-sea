@@ -19,6 +19,7 @@
   -webkit-animation-duration: 3s, 2s;
   -webkit-animation-name: slide, fade;
 	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes slide {
@@ -373,20 +374,25 @@ padding: 8px 20px;
 	margin: 0 5vw;
 }
 
+.modal-content .scheme:hover {
+	cursor: pointer;
+}
+
 /*.pulse {*/
 /*.modal-content .scheme:hover {
 	animation: pulse 2s linear infinite;
 	cursor: pointer;
 }*/
 
-/*@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	.modal-content .scheme {
 		margin: 0;
 	}
 	.modal-content .scheme:hover {
 		animation: none;
+    pointer-events: none;
 	}
-}*/
+}
 
 /*@keyframes pulse {
 	0%, 20% {
