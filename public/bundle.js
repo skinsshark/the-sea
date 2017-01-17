@@ -63,13 +63,13 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 173);
 	
-	var _Loader = __webpack_require__(/*! ./components/Loader */ 426);
+	var _Fish = __webpack_require__(/*! ./components/Fish */ 428);
 	
-	var _Loader2 = _interopRequireDefault(_Loader);
+	var _Fish2 = _interopRequireDefault(_Fish);
 	
-	var _App = __webpack_require__(/*! ./components/App */ 427);
+	var _Logo = __webpack_require__(/*! ./components/Logo */ 452);
 	
-	var _App2 = _interopRequireDefault(_App);
+	var _Logo2 = _interopRequireDefault(_Logo);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -81,50 +81,182 @@
 	
 	// TODO: remove all .DS_Stores
 	
-	var IEF = function (_React$Component) {
-	  _inherits(IEF, _React$Component);
+	var App = function (_React$Component) {
+	  _inherits(App, _React$Component);
 	
-	  function IEF(props) {
-	    _classCallCheck(this, IEF);
+	  function App(props) {
+	    _classCallCheck(this, App);
 	
-	    var _this = _possibleConstructorReturn(this, (IEF.__proto__ || Object.getPrototypeOf(IEF)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
-	    _this.state = { show: null };
-	    console.log("cinstr");
+	    _this.state = {
+	      loading: true
+	    };
 	    return _this;
 	  }
 	
-	  _createClass(IEF, [{
-	    key: 'onShow',
-	    value: function onShow() {
-	      this.setState({ show: true });
-	      console.log("showing bar");
-	    }
-	  }, {
-	    key: 'onHide',
-	    value: function onHide() {
-	      this.setState({ show: false });
-	      console.log("hiding loader");
+	  _createClass(App, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+	
+	      setTimeout(function () {
+	        return _this2.setState({ loading: false });
+	      }, 1000);
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var content = null;
+	      var loading = this.state.loading;
+	
+	
+	      if (loading) {
+	        return null; // render null when app is not ready
+	      }
+	
 	      // if (this.state.show == null) {
 	      //   const content = <App onLoad={this.onHide()}/>;
 	      // }
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'page-wrapper' },
-	        _react2.default.createElement(_App2.default, null)
+	        _react2.default.createElement(
+	          _reactBootstrap.Grid,
+	          null,
+	          _react2.default.createElement(
+	            'header',
+	            null,
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              _react2.default.createElement(_Logo2.default, null)
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'main',
+	            { className: 'container main-container' },
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'diamond-trevally' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'california-sheephead' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'milkfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'paroon-shark' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'indo-pacific-sailfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'giant-snakehead' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'yellowmargin-triggerfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'four-horn-sculpin' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'sloanes-viperfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'barracuda' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-parrotfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'paraya' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'hogfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'crocodile-icefish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-halibut' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'pirhana' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'blue-marlin' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'flying-fish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'alligator-gar' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'flying-gurnard' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'european-pilchard' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'orange-roughy' })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
+	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
+	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' })
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'footer',
+	          null,
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'c/2016 sunday desert'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'small',
+	              null,
+	              'the illustrated encyclopedia of fish is'
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
 	
-	  return IEF;
+	  return App;
 	}(_react2.default.Component);
 	
-	(0, _reactDom.render)(_react2.default.createElement(IEF, null), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -42610,271 +42742,8 @@
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
 
 /***/ },
-/* 426 */
-/*!**********************************!*\
-  !*** ./app/components/Loader.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Loader = function (_React$Component) {
-	  _inherits(Loader, _React$Component);
-	
-	  function Loader() {
-	    _classCallCheck(this, Loader);
-	
-	    return _possibleConstructorReturn(this, (Loader.__proto__ || Object.getPrototypeOf(Loader)).apply(this, arguments));
-	  }
-	
-	  _createClass(Loader, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement("div", { className: "loader" });
-	    }
-	  }]);
-	
-	  return Loader;
-	}(_react2.default.Component);
-	
-	exports.default = Loader;
-
-/***/ },
-/* 427 */
-/*!*******************************!*\
-  !*** ./app/components/App.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(/*! react-dom */ 35);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 173);
-	
-	var _Fish = __webpack_require__(/*! ./Fish */ 428);
-	
-	var _Fish2 = _interopRequireDefault(_Fish);
-	
-	var _Logo = __webpack_require__(/*! ./Logo */ 452);
-	
-	var _Logo2 = _interopRequireDefault(_Logo);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// TODO: remove all .DS_Stores
-	
-	var App = function (_React$Component) {
-	  _inherits(App, _React$Component);
-	
-	  function App(props) {
-	    _classCallCheck(this, App);
-	
-	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-	
-	    _this.state = { loaded: null };
-	    return _this;
-	  }
-	
-	  _createClass(App, [{
-	    key: 'handleImageLoaded',
-	    value: function handleImageLoaded() {
-	      this.setState({ loaded: true });
-	      console.log("loaded kids");
-	    }
-	  }, {
-	    key: 'handleImageErrored',
-	    value: function handleImageErrored() {
-	      this.setState({ loaded: false });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var className = this.props.className;
-	
-	      var styleClass = className ? className + ' img page-wrapper' : 'img page-wrapper';
-	      if (this.state.loaded) {
-	        styleClass += ' img-loaded';
-	      }
-	      return _react2.default.createElement(
-	        'div',
-	        {
-	          onLoad: this.handleImageLoaded.bind(this),
-	          onError: this.handleImageErrored.bind(this),
-	          className: styleClass },
-	        _react2.default.createElement(
-	          _reactBootstrap.Grid,
-	          null,
-	          _react2.default.createElement(
-	            'header',
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              _react2.default.createElement(_Logo2.default, null)
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'main',
-	            { className: 'container main-container' },
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'diamond-trevally' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'california-sheephead' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'milkfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'paroon-shark' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'red-coris-wrasse' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'sockeye-salmon' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'indo-pacific-sailfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'giant-snakehead' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'yellowmargin-triggerfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'four-horn-sculpin' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'sloanes-viperfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'giant-gourami' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'blue-ram-cichlid' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'mahi-mahi' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'yellowtail-kingfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'yellow-boxfish' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-mackerel' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'bluefin-tuna' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'asian-catfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'black-sea-bass' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'wels-catfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'tiger-queen-anthias' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'barracuda' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'asian-arowana' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'star-sturgeon' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'rainbow-trout' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'blue-parrotfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'paraya' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'goblin-shark' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'humpback-anglerfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'goliath-grouper' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'stoplight-loosejaw' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'hogfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'crocodile-icefish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'atlantic-halibut' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'pirhana' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'blue-marlin' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'flying-fish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'alligator-gar' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'flying-gurnard' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'european-pilchard' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'bonito' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'orange-spotted-sunfish' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'orange-roughy' })
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
-	              _react2.default.createElement(_Fish2.default, { name: 'mudskipper' }),
-	              _react2.default.createElement(_Fish2.default, { name: 'mangrove-snapper' })
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'footer',
-	          null,
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'c/2016 sunday desert'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            _react2.default.createElement(
-	              'small',
-	              null,
-	              'the illustrated encyclopedia of fish is'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return App;
-	}(_react2.default.Component);
-	
-	exports.default = App;
-
-/***/ },
+/* 426 */,
+/* 427 */,
 /* 428 */
 /*!********************************!*\
   !*** ./app/components/Fish.js ***!
@@ -45660,7 +45529,7 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45671,6 +45540,10 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _FishImage = __webpack_require__(/*! ./FishImage */ 429);
+	
+	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -45690,14 +45563,12 @@
 	  }
 	
 	  _createClass(Logo, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "a",
-	        { href: "/" },
-	        _react2.default.createElement("img", { src: "app/images/Logo.png",
-	          alt: "the illustrated encyclopedia of fish"
-	        })
+	        'a',
+	        { href: 'http://skinsshark.github.io/the-sea' },
+	        _react2.default.createElement(_FishImage2.default, { name: 'logo' })
 	      );
 	    }
 	  }]);

@@ -1,13 +1,12 @@
 import React from 'react';
+import FishImage from './FishImage';
 
 class Logo extends React.Component{
 
   render () {
     return (
-      <a href="/">
-        <img src="app/images/Logo.png"
-          alt="the illustrated encyclopedia of fish"
-        />
+      <a href="http://skinsshark.github.io/the-sea">
+        <FishImage name="logo" />
       </a>
     );
   }
