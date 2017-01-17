@@ -383,18 +383,21 @@ padding: 8px 20px;
 }
 
 /*.pulse {*/
-.modal-content .scheme:hover {
+/*.modal-content .scheme:hover {
 	animation: pulse 2s linear infinite;
 	cursor: pointer;
-}
+}*/
 
-@media only screen and (max-width: 767px) {
+/*@media only screen and (max-width: 767px) {
 	.modal-content .scheme {
 		margin: 0;
 	}
-}
+	.modal-content .scheme:hover {
+		animation: none;
+	}
+}*/
 
-@keyframes pulse {
+/*@keyframes pulse {
 	0%, 20% {
 		transform: scale(1);
 	}
@@ -404,7 +407,7 @@ padding: 8px 20px;
 	100% {
 		transform: scale(1);
 	}
-}
+}*/
 
 .modal-overlay {
 	background-image: url("../images/modal-bg.png");
