@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Col } from 'react-bootstrap';
 
 class FishImage extends React.Component {
   constructor(props) {

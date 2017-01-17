@@ -1,7 +1,6 @@
 import data from '!json!./json/data.json';
 import React from 'react';
 import FishImage from './FishImage';
-import { Row, Col } from 'react-bootstrap';
 
 class ModalContents extends React.Component {
   constructor() {
