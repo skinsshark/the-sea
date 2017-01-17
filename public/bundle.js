@@ -63,11 +63,11 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 173);
 	
-	var _Fish = __webpack_require__(/*! ./components/Fish */ 428);
+	var _Fish = __webpack_require__(/*! ./components/Fish */ 426);
 	
 	var _Fish2 = _interopRequireDefault(_Fish);
 	
-	var _Logo = __webpack_require__(/*! ./components/Logo */ 452);
+	var _Logo = __webpack_require__(/*! ./components/Logo */ 450);
 	
 	var _Logo2 = _interopRequireDefault(_Logo);
 	
@@ -102,7 +102,7 @@
 	
 	      setTimeout(function () {
 	        return _this2.setState({ loading: false });
-	      }, 1000);
+	      }, 4500);
 	    }
 	  }, {
 	    key: 'render',
@@ -42742,9 +42742,7 @@
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
 
 /***/ },
-/* 426 */,
-/* 427 */,
-/* 428 */
+/* 426 */
 /*!********************************!*\
   !*** ./app/components/Fish.js ***!
   \********************************/
@@ -42764,15 +42762,15 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 173);
 	
-	var _FishImage = __webpack_require__(/*! ./FishImage */ 429);
+	var _FishImage = __webpack_require__(/*! ./FishImage */ 427);
 	
 	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
-	var _ModalContents = __webpack_require__(/*! ./ModalContents */ 430);
+	var _ModalContents = __webpack_require__(/*! ./ModalContents */ 428);
 	
 	var _ModalContents2 = _interopRequireDefault(_ModalContents);
 	
-	var _reactModal = __webpack_require__(/*! react-modal */ 432);
+	var _reactModal = __webpack_require__(/*! react-modal */ 430);
 	
 	var _reactModal2 = _interopRequireDefault(_reactModal);
 	
@@ -42847,7 +42845,7 @@
 	exports.default = Fish;
 
 /***/ },
-/* 429 */
+/* 427 */
 /*!*************************************!*\
   !*** ./app/components/FishImage.js ***!
   \*************************************/
@@ -42931,7 +42929,7 @@
 	exports.default = FishImage;
 
 /***/ },
-/* 430 */
+/* 428 */
 /*!*****************************************!*\
   !*** ./app/components/ModalContents.js ***!
   \*****************************************/
@@ -42945,7 +42943,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _data = __webpack_require__(/*! json!./json/data.json */ 431);
+	var _data = __webpack_require__(/*! json!./json/data.json */ 429);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -42953,7 +42951,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _FishImage = __webpack_require__(/*! ./FishImage */ 429);
+	var _FishImage = __webpack_require__(/*! ./FishImage */ 427);
 	
 	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
@@ -43028,7 +43026,7 @@
 	exports.default = ModalContents;
 
 /***/ },
-/* 431 */
+/* 429 */
 /*!*******************************************************!*\
   !*** ./~/json-loader!./app/components/json/data.json ***!
   \*******************************************************/
@@ -43500,18 +43498,18 @@
 	};
 
 /***/ },
-/* 432 */
+/* 430 */
 /*!************************************!*\
   !*** ./~/react-modal/lib/index.js ***!
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./components/Modal */ 433);
+	module.exports = __webpack_require__(/*! ./components/Modal */ 431);
 	
 
 
 /***/ },
-/* 433 */
+/* 431 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/components/Modal.js ***!
   \***********************************************/
@@ -43519,12 +43517,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 35);
-	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 434);
-	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 435));
-	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 450);
-	var elementClass = __webpack_require__(/*! element-class */ 451);
+	var ExecutionEnvironment = __webpack_require__(/*! exenv */ 432);
+	var ModalPortal = React.createFactory(__webpack_require__(/*! ./ModalPortal */ 433));
+	var ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ 448);
+	var elementClass = __webpack_require__(/*! element-class */ 449);
 	var renderSubtreeIntoContainer = __webpack_require__(/*! react-dom */ 35).unstable_renderSubtreeIntoContainer;
-	var Assign = __webpack_require__(/*! lodash.assign */ 439);
+	var Assign = __webpack_require__(/*! lodash.assign */ 437);
 	
 	var SafeHTMLElement = ExecutionEnvironment.canUseDOM ? window.HTMLElement : {};
 	var AppElement = ExecutionEnvironment.canUseDOM ? document.body : {appendChild: function() {}};
@@ -43635,7 +43633,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 434 */
+/* 432 */
 /*!****************************************!*\
   !*** ./~/react-modal/~/exenv/index.js ***!
   \****************************************/
@@ -43683,7 +43681,7 @@
 
 
 /***/ },
-/* 435 */
+/* 433 */
 /*!*****************************************************!*\
   !*** ./~/react-modal/lib/components/ModalPortal.js ***!
   \*****************************************************/
@@ -43691,9 +43689,9 @@
 
 	var React = __webpack_require__(/*! react */ 1);
 	var div = React.DOM.div;
-	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 436);
-	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 438);
-	var Assign = __webpack_require__(/*! lodash.assign */ 439);
+	var focusManager = __webpack_require__(/*! ../helpers/focusManager */ 434);
+	var scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ 436);
+	var Assign = __webpack_require__(/*! lodash.assign */ 437);
 	
 	// so that our CSS is statically analyzable
 	var CLASS_NAMES = {
@@ -43904,13 +43902,13 @@
 
 
 /***/ },
-/* 436 */
+/* 434 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/focusManager.js ***!
   \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 437);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
 	var modalElement = null;
 	var focusLaterElement = null;
 	var needToFocus = false;
@@ -43981,7 +43979,7 @@
 
 
 /***/ },
-/* 437 */
+/* 435 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/tabbable.js ***!
   \***********************************************/
@@ -44040,13 +44038,13 @@
 
 
 /***/ },
-/* 438 */
+/* 436 */
 /*!***********************************************!*\
   !*** ./~/react-modal/lib/helpers/scopeTab.js ***!
   \***********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 437);
+	var findTabbable = __webpack_require__(/*! ../helpers/tabbable */ 435);
 	
 	module.exports = function(node, event) {
 	  var tabbable = findTabbable(node);
@@ -44068,7 +44066,7 @@
 
 
 /***/ },
-/* 439 */
+/* 437 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/index.js ***!
   \************************************************/
@@ -44082,9 +44080,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 440),
-	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 446),
-	    keys = __webpack_require__(/*! lodash.keys */ 442);
+	var baseAssign = __webpack_require__(/*! lodash._baseassign */ 438),
+	    createAssigner = __webpack_require__(/*! lodash._createassigner */ 444),
+	    keys = __webpack_require__(/*! lodash.keys */ 440);
 	
 	/**
 	 * A specialized version of `_.assign` for customizing assigned values without
@@ -44157,7 +44155,7 @@
 
 
 /***/ },
-/* 440 */
+/* 438 */
 /*!*********************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/index.js ***!
   \*********************************************************************/
@@ -44171,8 +44169,8 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 441),
-	    keys = __webpack_require__(/*! lodash.keys */ 442);
+	var baseCopy = __webpack_require__(/*! lodash._basecopy */ 439),
+	    keys = __webpack_require__(/*! lodash.keys */ 440);
 	
 	/**
 	 * The base implementation of `_.assign` without support for argument juggling,
@@ -44193,7 +44191,7 @@
 
 
 /***/ },
-/* 441 */
+/* 439 */
 /*!****************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._baseassign/~/lodash._basecopy/index.js ***!
   \****************************************************************************************/
@@ -44234,7 +44232,7 @@
 
 
 /***/ },
-/* 442 */
+/* 440 */
 /*!**************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/index.js ***!
   \**************************************************************/
@@ -44248,9 +44246,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(/*! lodash._getnative */ 443),
-	    isArguments = __webpack_require__(/*! lodash.isarguments */ 444),
-	    isArray = __webpack_require__(/*! lodash.isarray */ 445);
+	var getNative = __webpack_require__(/*! lodash._getnative */ 441),
+	    isArguments = __webpack_require__(/*! lodash.isarguments */ 442),
+	    isArray = __webpack_require__(/*! lodash.isarray */ 443);
 	
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -44479,7 +44477,7 @@
 
 
 /***/ },
-/* 443 */
+/* 441 */
 /*!**********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash._getnative/index.js ***!
   \**********************************************************************************/
@@ -44625,7 +44623,7 @@
 
 
 /***/ },
-/* 444 */
+/* 442 */
 /*!***********************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarguments/index.js ***!
   \***********************************************************************************/
@@ -44863,7 +44861,7 @@
 
 
 /***/ },
-/* 445 */
+/* 443 */
 /*!*******************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash.keys/~/lodash.isarray/index.js ***!
   \*******************************************************************************/
@@ -45052,7 +45050,7 @@
 
 
 /***/ },
-/* 446 */
+/* 444 */
 /*!*************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/index.js ***!
   \*************************************************************************/
@@ -45066,9 +45064,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 447),
-	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 448),
-	    restParam = __webpack_require__(/*! lodash.restparam */ 449);
+	var bindCallback = __webpack_require__(/*! lodash._bindcallback */ 445),
+	    isIterateeCall = __webpack_require__(/*! lodash._isiterateecall */ 446),
+	    restParam = __webpack_require__(/*! lodash.restparam */ 447);
 	
 	/**
 	 * Creates a function that assigns properties of source object(s) to a given
@@ -45113,7 +45111,7 @@
 
 
 /***/ },
-/* 447 */
+/* 445 */
 /*!************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._bindcallback/index.js ***!
   \************************************************************************************************/
@@ -45187,7 +45185,7 @@
 
 
 /***/ },
-/* 448 */
+/* 446 */
 /*!**************************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash._isiterateecall/index.js ***!
   \**************************************************************************************************/
@@ -45328,7 +45326,7 @@
 
 
 /***/ },
-/* 449 */
+/* 447 */
 /*!********************************************************************************************!*\
   !*** ./~/react-modal/~/lodash.assign/~/lodash._createassigner/~/lodash.restparam/index.js ***!
   \********************************************************************************************/
@@ -45404,7 +45402,7 @@
 
 
 /***/ },
-/* 450 */
+/* 448 */
 /*!***************************************************!*\
   !*** ./~/react-modal/lib/helpers/ariaAppHider.js ***!
   \***************************************************/
@@ -45455,7 +45453,7 @@
 
 
 /***/ },
-/* 451 */
+/* 449 */
 /*!************************************************!*\
   !*** ./~/react-modal/~/element-class/index.js ***!
   \************************************************/
@@ -45523,7 +45521,7 @@
 
 
 /***/ },
-/* 452 */
+/* 450 */
 /*!********************************!*\
   !*** ./app/components/Logo.js ***!
   \********************************/
@@ -45541,7 +45539,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _FishImage = __webpack_require__(/*! ./FishImage */ 429);
+	var _FishImage = __webpack_require__(/*! ./FishImage */ 427);
 	
 	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
