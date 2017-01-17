@@ -9,7 +9,8 @@
 .loader:empty:after {
   position:absolute;
 	width:100vw;
-	background-color:lightblue;
+	background-color: #B0E2FF;
+  border-bottom: 5vh solid #A4D3EE;
   z-index:99;
   bottom:0;
   left:0;
@@ -60,7 +61,7 @@
 
 body {
 	opacity: 1;
-	background-color: #fff;
+	background-color: #eee;
 	padding: 75px 0 0;
 	font-family: 'Sonder';
 	font-size: 20px;
@@ -73,6 +74,7 @@ body {
 
 @keyframes background-load {
 	100%{
+    background-color: #fff;
 		background-image: url("../images/background.png");
 	}
 }
