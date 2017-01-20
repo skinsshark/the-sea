@@ -81,6 +81,18 @@ footer {
   background: linear-gradient(white, #BEDFF7);
 }
 
+@media only screen and (max-width: 767px) {
+  footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
+
 img {
   width: 100%;
   font-size: 25px;
@@ -167,7 +179,12 @@ h1 a,
 h1 a:hover,
 h1 a:focus,
 h1 a:active,
-h1 a:visited {
+h1 a:visited,
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
   color: #333;
   text-decoration: none;
 }

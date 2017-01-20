@@ -113,8 +113,9 @@ class App extends React.Component {
           </main>
         </Grid>
         <footer>
-          <p>c/2016 sunday desert</p>
-          <p><small>the illustrated encyclopedia of fish is</small></p>
+          <p>c/2017 sunday desert</p>
+          <p><small>the illustrated encyclopedia of fish is a colour study piece, an educational tool, an interactive palette</small></p>
+          <p><a href="http://sundaydesert.tumblr.com/" target="_blank"><img src="app/images/eye.png" /></a></p>
         </footer>
       </div>
     );

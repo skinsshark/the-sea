@@ -1,11 +1,8 @@
 {
   "name": "the-sea",
   "version": "1.0.0",
-  "description": "",
+  "description": "the illustrated encyclopedia of fish is a colour study piece, an educational tool, an interactive palette by sunday desert",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
