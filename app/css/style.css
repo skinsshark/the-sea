@@ -101,17 +101,48 @@ img {
 
 .img {
   opacity: 0;
-  transition: opacity 2s;
+  transform: translateY(0);
+  transition: opacity 2s, transform 0.5s;
 }
 
-.img-fish {
-  background-image: url("../images/modal-bg.png");
-  /* temp loader */
-  background-size: cover;
+@media only screen and (min-width: 992px) {
+  .img-fish:hover {
+    transform: translateY(20px);
+  }
+
+  h1 .img-fish:hover {
+    transform: translateY(0);
+  }
 }
 
 .img-fish:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) {
+  .modal-wrapper .img-fish {
+    animation: swim 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes swim {
+    0% {
+      transform: translateY(-0.5vh);
+    }
+    100% {
+      transform: translateY(0.5vh);
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  @keyframes swim {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
 }
 
 .modal-wrapper .img-fish:hover {
