@@ -147,6 +147,10 @@ h1 .img-fish:hover {
 	}
 }
 
+.modal-wrapper .img-fish.mudskipper {
+	animation: none;
+}
+
 .modal-wrapper .img-fish:hover {
 	cursor: default;
 }
@@ -401,8 +405,9 @@ small {
 }
 
 @media only screen and (max-width: 500px) {
-	.modal-content img {
-		width: 100vw;
+	.modal-content .img-fish {
+		width: 55vh;
+    transform: translateX(10vw);
 	}
 }
 

@@ -41898,6 +41898,9 @@
 	      var styleClass = className ? className + ' img img-fish' : 'img img-fish';
 	      if (this.state.loaded) {
 	        styleClass += ' img-loaded';
+	        if (name == 'mudskipper') {
+	          styleClass += ' mudskipper';
+	        }
 	      }
 	
 	      return _react2.default.createElement("img", _extends({ src: imageURL,
@@ -42241,7 +42244,7 @@
 					"#7ec195",
 					"#e9e49a"
 				],
-				"weight": "1000kg",
+				"weight": "32g",
 				"size": "15cm"
 			},
 			"four-horn-sculpin": {
@@ -42253,7 +42256,7 @@
 					"#644820",
 					"#cbaacd"
 				],
-				"weight": "0.13kg",
+				"weight": "130g",
 				"size": "20-30cm"
 			},
 			"mudskipper": {

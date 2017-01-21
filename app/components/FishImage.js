@@ -21,6 +21,9 @@ class FishImage extends React.Component {
     var styleClass = className ? className + ' img img-fish' : 'img img-fish';
     if (this.state.loaded) {
       styleClass += ' img-loaded';
+      if (name == 'mudskipper') {
+        styleClass += ' mudskipper';
+      }
     }
 
     return (

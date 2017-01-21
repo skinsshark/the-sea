@@ -141,7 +141,7 @@
       "colours" : [
         "#ff4a01", "#337c7f", "#8f6e94", "#7ec195", "#e9e49a"
       ],
-      "weight" : "1000kg",
+      "weight" : "32g",
       "size" : "15cm"
     },
     "four-horn-sculpin" : {
@@ -149,7 +149,7 @@
       "colours" : [
         "#472a24", "#282d08", "#31260a", "#644820", "#cbaacd"
       ],
-      "weight" : "0.13kg",
+      "weight" : "130g",
       "size" : "20-30cm"
     },
     "mudskipper" : {
