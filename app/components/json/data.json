@@ -5,7 +5,7 @@
       "colours" : [
         "#6e582f", "#691700", "#999451", "#d77717", "#4e9b98"
       ],
-      "weight" : "",
+      "weight" : "100g",
       "size" : "2.5-3cm"
     },
     "ballyhoo" : {
@@ -37,7 +37,7 @@
       "colours" : [
         "#fff6e4", "#dd5d3a", "#a12b1f", "#bd243e", "#ede257"
       ],
-      "weight" : "",
+      "weight" : "1kg",
       "size" : "25cm"
     },
     "zander" : {
@@ -53,7 +53,7 @@
       "colours" : [
         "#7c5a6c", "#a7a061", "#614b6e", "#62503c", "#7a8da5"
       ],
-      "weight" : "",
+      "weight" : "1kg",
       "size" : "25cm"
     },
     "yellowmargin-triggerfish" : {
@@ -61,7 +61,7 @@
       "colours" : [
         "#f9ed81", "#0055c4", "#e8bcf5", "#a339e5", "#ffb700"
       ],
-      "weight" : "",
+      "weight" : "0.45kg",
       "size" : "20-50cm"
     },
     "paroon-shark" : {
@@ -109,7 +109,7 @@
       "colours" : [
         "#fff693", "#ffc7ed", "#244059", "#06111d", "#caa269"
       ],
-      "weight" : "",
+      "weight" : "80-300g",
       "size" : "27cm"
     },
     "sloanes-viperfish" : {
@@ -117,7 +117,7 @@
       "colours" : [
         "#097476", "#83dfe0", "#1e2e56", "#f76d84", "#fff716"
       ],
-      "weight" : "",
+      "weight" : "23g",
       "size" : "28cm"
     },
     "indo-pacific-sailfish" : {
@@ -141,7 +141,7 @@
       "colours" : [
         "#ff4a01", "#337c7f", "#8f6e94", "#7ec195", "#e9e49a"
       ],
-      "weight" : "",
+      "weight" : "1000kg",
       "size" : "15cm"
     },
     "four-horn-sculpin" : {
@@ -229,7 +229,7 @@
       "colours" : [
         "#ff6200", "#00f8eb", "#6b7cd0", "#1b0a58", "#e794d0"
       ],
-      "weight" : "",
+      "weight" : "2kg",
       "size" : "10cm"
     },
     "goliath-grouper" : {
@@ -270,7 +270,7 @@
         "#af672c", "#992a0e", "#32fff8", "#f0dfc3", "#d6b2b2"
       ],
       "weight" : "290g",
-      "size" : "f: 18cm   m: 3cm"
+      "size" : "F: 18cm   M: 3cm"
     },
     "yellowtail-kingfish" : {
       "sci" : "Seriola Lalandi",
@@ -285,7 +285,7 @@
       "colours" : [
         "#292345", "#00eaff", "#243843", "#656148", "#3d6982"
       ],
-      "weight" : "",
+      "weight" : "123g",
       "size" : "25cm"
     },
     "star-sturgeon" : {
@@ -309,7 +309,7 @@
       "colours" : [
         "#ff98a3", "#942f75", "#fe931f", "#fff06f", "#9da8de"
       ],
-      "weight" : "",
+      "weight" : "200g",
       "size" : "7cm"
     },
     "wels-catfish" : {
@@ -333,7 +333,7 @@
       "colours" : [
         "#ea2f2f", "#f4aa51", "#e4c7b7", "#312f29", "#90e4d9"
       ],
-      "weight" : "",
+      "weight" : "1kg",
       "size" : "12cm"
     },
     "mahi-mahi" : {
@@ -365,7 +365,7 @@
       "colours" : [
         "#fb4e3d", "#00caf8", "#fad53e", "#a84327", "#0a1c9a"
       ],
-      "weight" : "",
+      "weight" : "1kg",
       "size" : "40cm"
     },
     "sockeye-salmon" : {
@@ -405,7 +405,7 @@
       "colours" : [
         "#dbb52e", "#1a1d14", "#f9f095", "#ad8c00", "#eeecd5"
       ],
-      "weight" : "",
+      "weight" : "300g",
       "size" : "45cm"
     },
     "giant-gourami" : {
@@ -413,7 +413,7 @@
       "colours" : [
         "#6caebe", "#e0b4d7", "#4b6193", "#deeeed", "#8a6b8b"
       ],
-      "weight" : "",
+      "weight" : "10kg",
       "size" : "45-70cm"
     }
   }

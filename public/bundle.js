@@ -96,7 +96,7 @@
 	
 	      setTimeout(function () {
 	        return _this2.setState({ loading: false });
-	      }, 4000);
+	      }, 4500);
 	    }
 	  }, {
 	    key: 'render',
@@ -42037,7 +42037,7 @@
 					"#d77717",
 					"#4e9b98"
 				],
-				"weight": "",
+				"weight": "100g",
 				"size": "2.5-3cm"
 			},
 			"ballyhoo": {
@@ -42061,7 +42061,7 @@
 					"#ffb07a",
 					"#281e77"
 				],
-				"weight": "",
+				"weight": "0.19kg",
 				"size": "25cm"
 			},
 			"red-roman": {
@@ -42085,7 +42085,7 @@
 					"#bd243e",
 					"#ede257"
 				],
-				"weight": "",
+				"weight": "1kg",
 				"size": "25cm"
 			},
 			"zander": {
@@ -42109,7 +42109,7 @@
 					"#62503c",
 					"#7a8da5"
 				],
-				"weight": "",
+				"weight": "1kg",
 				"size": "25cm"
 			},
 			"yellowmargin-triggerfish": {
@@ -42121,7 +42121,7 @@
 					"#a339e5",
 					"#ffb700"
 				],
-				"weight": "",
+				"weight": "0.45kg",
 				"size": "20-50cm"
 			},
 			"paroon-shark": {
@@ -42193,7 +42193,7 @@
 					"#06111d",
 					"#caa269"
 				],
-				"weight": "",
+				"weight": "80-300g",
 				"size": "27cm"
 			},
 			"sloanes-viperfish": {
@@ -42205,7 +42205,7 @@
 					"#f76d84",
 					"#fff716"
 				],
-				"weight": "",
+				"weight": "23g",
 				"size": "28cm"
 			},
 			"indo-pacific-sailfish": {
@@ -42241,7 +42241,7 @@
 					"#7ec195",
 					"#e9e49a"
 				],
-				"weight": "",
+				"weight": "1000kg",
 				"size": "15cm"
 			},
 			"four-horn-sculpin": {
@@ -42265,7 +42265,7 @@
 					"#c6887e",
 					"#dbb495"
 				],
-				"weight": "0.06kg",
+				"weight": "60g",
 				"size": "9.5cm"
 			},
 			"alligator-gar": {
@@ -42373,7 +42373,7 @@
 					"#1b0a58",
 					"#e794d0"
 				],
-				"weight": "",
+				"weight": "2kg",
 				"size": "10cm"
 			},
 			"goliath-grouper": {
@@ -42397,7 +42397,7 @@
 					"#514460",
 					"#9299df"
 				],
-				"weight": "",
+				"weight": "190kg",
 				"size": "300-400cm"
 			},
 			"blue-parrotfish": {
@@ -42409,7 +42409,7 @@
 					"#58aed4",
 					"#012135"
 				],
-				"weight": "",
+				"weight": "9kg",
 				"size": "30-75cm"
 			},
 			"paraya": {
@@ -42433,8 +42433,8 @@
 					"#f0dfc3",
 					"#d6b2b2"
 				],
-				"weight": "",
-				"size": "f: 18cm   m: 3cm"
+				"weight": "290g",
+				"size": "F: 18cm   M: 3cm"
 			},
 			"yellowtail-kingfish": {
 				"sci": "Seriola Lalandi",
@@ -42445,7 +42445,7 @@
 					"#ad8097",
 					"#ddf3ff"
 				],
-				"weight": "",
+				"weight": "38kg",
 				"size": "180cm"
 			},
 			"stoplight-loosejaw": {
@@ -42457,8 +42457,8 @@
 					"#656148",
 					"#3d6982"
 				],
-				"weight": "",
-				"size": ""
+				"weight": "123g",
+				"size": "25cm"
 			},
 			"star-sturgeon": {
 				"sci": "Acipenser Stellatus",
@@ -42481,7 +42481,7 @@
 					"#4d746a",
 					"#65544e"
 				],
-				"weight": "",
+				"weight": "23kg",
 				"size": "165cm"
 			},
 			"tiger-queen-anthias": {
@@ -42493,8 +42493,8 @@
 					"#fff06f",
 					"#9da8de"
 				],
-				"weight": "",
-				"size": ""
+				"weight": "200g",
+				"size": "7cm"
 			},
 			"wels-catfish": {
 				"sci": "Silurus Glanis",
@@ -42529,7 +42529,7 @@
 					"#312f29",
 					"#90e4d9"
 				],
-				"weight": "",
+				"weight": "1kg",
 				"size": "12cm"
 			},
 			"mahi-mahi": {
@@ -42553,7 +42553,7 @@
 					"#fff2d0",
 					"#3c5d71"
 				],
-				"weight": "",
+				"weight": "1.9kg",
 				"size": "47cm"
 			},
 			"bonito": {
@@ -42577,7 +42577,7 @@
 					"#a84327",
 					"#0a1c9a"
 				],
-				"weight": "",
+				"weight": "1kg",
 				"size": "40cm"
 			},
 			"sockeye-salmon": {
@@ -42602,7 +42602,7 @@
 					"#afb6bc"
 				],
 				"weight": "0.5-9kg",
-				"size": ""
+				"size": "40cm"
 			},
 			"bluefin-tuna": {
 				"sci": "Thunnus Thynnus",
@@ -42625,7 +42625,7 @@
 					"#f1679c",
 					"#a2103a"
 				],
-				"weight": "",
+				"weight": "15kg",
 				"size": "90cm"
 			},
 			"yellow-boxfish": {
@@ -42637,7 +42637,7 @@
 					"#ad8c00",
 					"#eeecd5"
 				],
-				"weight": "",
+				"weight": "300g",
 				"size": "45cm"
 			},
 			"giant-gourami": {
@@ -42649,7 +42649,7 @@
 					"#deeeed",
 					"#8a6b8b"
 				],
-				"weight": "",
+				"weight": "10kg",
 				"size": "45-70cm"
 			}
 		}
