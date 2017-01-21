@@ -2,9 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Fish from './components/Fish';
-import Logo from './components/Logo';
-
-// TODO: remove all .DS_Stores
+import FishImage from './components/FishImage';
 
 class App extends React.Component {
   constructor( props ) {
@@ -29,7 +27,7 @@ class App extends React.Component {
       <div className="page-wrapper">
         <Grid>
           <header>
-            <h1><Logo /></h1>
+            <h1><FishImage name="logo" /></h1>
           </header>
           <main className="container main-container">
             <Row className="show-grid">

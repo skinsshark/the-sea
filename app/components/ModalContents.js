@@ -5,17 +5,14 @@ import FishImage from './FishImage';
 class ModalContents extends React.Component {
   constructor() {
     super();
-    this.copyColour = this.copyColour.bind(this);
-  }
-
-  copyColour(name) {
-    window.prompt("Copy to clipboard with (cmd/ctrl) + c and hit enter", name);
   }
 
   render() {
     const { name } = this.props;
     const fishName = name.replace(/-/g, ' ');
     const colourCode = data.fish[name].colours;
+    const fishWeight = data.fish[name].weight;
+    const fishSize = data.fish[name].size;
 
     return (
       <div className="modal-wrapper">
@@ -23,11 +20,18 @@ class ModalContents extends React.Component {
         <p className="fish-names">
           <span className="en-fish">{fishName}</span> {data.fish[name].sci}
         </p>
-        <ul className="schemes">
+        <ul className="schemes col-sm-6">
           {colourCode.map((name, i)=>{
-            return <li key={i} style={{backgroundColor: name}} className="scheme" onClick={() => this.copyColour(name)}></li>;
+            return <li key={i} style={{backgroundColor: name}} className="scheme"></li>;
           })}
         </ul>
+        <div className="col-sm-6 facts">
+          <div className="fact-details">
+            <img src="app/images/weight.png" /><span className="weight">{fishWeight}</span>
+            <br className="visible-mobile"/>
+            <img src="app/images/size.png" /><span>{fishSize}</span>
+          </div>
+        </div>
       </div>
     );
   }

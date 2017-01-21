@@ -4,313 +4,417 @@
       "sci" : "Indostomus Paradoxus",
       "colours" : [
         "#6e582f", "#691700", "#999451", "#d77717", "#4e9b98"
-      ]
+      ],
+      "weight" : "",
+      "size" : "2.5-3cm"
     },
     "ballyhoo" : {
       "sci" : "Hemiramphus Brasiliensis",
       "colours" : [
         "#4a73e7", "#40c5b7", "#e7cb54", "#eee5d3", "#2ce887"
-      ]
+      ],
+      "weight" : "0.35kg",
+      "size" : "35cm"
     },
     "blackfin-scad" : {
       "sci" : "Alepes Melanoptera",
       "colours" : [
         "#9fe0e8", "#bdfeff", "#c3c5f0", "#ffb07a", "#281e77"
-      ]
+      ],
+      "weight" : "0.19kg",
+      "size" : "25cm"
     },
     "red-roman" : {
       "sci" : "Chrysoblephus Laticeps",
       "colours" : [
         "#fa6422", "#c90c0c", "#8d0809", "#c97574", "#ffec81"
-      ]
+      ],
+      "weight" : "4.2kg",
+      "size" : "50cm"
     },
     "rouget-barbet" : {
       "sci" : "Mullus Surmuletus",
       "colours" : [
         "#fff6e4", "#dd5d3a", "#a12b1f", "#bd243e", "#ede257"
-      ]
+      ],
+      "weight" : "",
+      "size" : "25cm"
     },
     "zander" : {
       "sci" : "Sander Lucioperca",
       "colours" : [
         "#c6c186", "#3c3e34", "#45596c", "#616089", "#ddc374"
-      ]
+      ],
+      "weight" : "20kg",
+      "size" : "40-80cm"
     },
     "flying-fish" : {
       "sci" : "Cheilopogon Melanurus",
       "colours" : [
         "#7c5a6c", "#a7a061", "#614b6e", "#62503c", "#7a8da5"
-      ]
+      ],
+      "weight" : "",
+      "size" : "25cm"
     },
     "yellowmargin-triggerfish" : {
       "sci" : "Pseudobalistes Flavimarginatus",
       "colours" : [
         "#f9ed81", "#0055c4", "#e8bcf5", "#a339e5", "#ffb700"
-      ]
+      ],
+      "weight" : "",
+      "size" : "20-50cm"
     },
     "paroon-shark" : {
       "sci" : "Pangasius Sanitwongsei",
       "colours" : [
         "#92aba9", "#ad8ba6", "#4b3d50", "#97ffe8", "#745d73"
-      ]
+      ],
+      "weight" : "300kg",
+      "size" : "300cm"
     },
     "milkfish" : {
       "sci" : "Chanos Chanos",
       "colours" : [
         "#64aed1", "#7effff", "#776f81", "#1a566e", "#20495e"
-      ]
+      ],
+      "weight" : "14kg",
+      "size" : "100cm"
     },
     "diamond-trevally" : {
       "sci" : "Alectis Indica",
       "colours" : [
         "#dc83f2", "#526f6b", "#61ea9d", "#aae4ff", "#bccd89"
-      ]
+      ],
+      "weight" : "25kg",
+      "size" : "165cm"
     },
     "california-sheephead" : {
       "sci" : "Semicossyphus Pulcher",
       "colours" : [
         "#7c2929", "#a95f5f", "#a78b8b", "#aca4a4", "#1a1919"
-      ]
+      ],
+      "weight" : "16kg",
+      "size" : "91cm"
     },
     "orange-roughy" : {
       "sci" : "Hoplostethus Atlanticus",
       "colours" : [
         "#e24a22", "#d71e19", "#987a9f", "#fff09a", "#491413"
-      ]
+      ],
+      "weight" : "7kg",
+      "size" : "35-45cm"
     },
     "european-pilchard" : {
       "sci" : "Sardina Pilchardus",
       "colours" : [
         "#fff693", "#ffc7ed", "#244059", "#06111d", "#caa269"
-      ]
+      ],
+      "weight" : "",
+      "size" : "27cm"
     },
     "sloanes-viperfish" : {
       "sci" : "Chauliodus Sloani",
       "colours" : [
         "#097476", "#83dfe0", "#1e2e56", "#f76d84", "#fff716"
-      ]
+      ],
+      "weight" : "",
+      "size" : "28cm"
     },
     "indo-pacific-sailfish" : {
       "sci" : "Istiophorus Platypterus",
       "colours" : [
         "#544f8a", "#78abb9", "#deb53c", "#8a41a2", "#4a4151"
-      ]
+      ],
+      "weight" : "90kg",
+      "size" : "300cm"
     },
     "giant-snakehead" : {
       "sci" : "Channa Micropeltes",
       "colours" : [
         "#b4a4a1", "#85548f", "#037c64", "#8fbdb6", "#8ff135"
-      ]
+      ],
+      "weight" : "20kg",
+      "size" : "130cm"
     },
     "orange-spotted-sunfish" : {
       "sci" : "Lepomis Humilis",
       "colours" : [
         "#ff4a01", "#337c7f", "#8f6e94", "#7ec195", "#e9e49a"
-      ]
+      ],
+      "weight" : "",
+      "size" : "15cm"
     },
     "four-horn-sculpin" : {
       "sci" : "Myoxocephalus Quadricornis",
       "colours" : [
         "#472a24", "#282d08", "#31260a", "#644820", "#cbaacd"
-      ]
+      ],
+      "weight" : "0.13kg",
+      "size" : "20-30cm"
     },
     "mudskipper" : {
       "sci" : "Oxudercinae",
       "colours" : [
         "#98f0ed", "#bf8e56", "#2b1822", "#c6887e", "#dbb495"
-      ]
+      ],
+      "weight" : "60g",
+      "size" : "9.5cm"
     },
     "alligator-gar" : {
       "sci" : "Atractosteus Spatula",
       "colours" : [
         "#0b0d0e", "#5b9b7a", "#ff8c9f", "#b198c0", "#525d6d"
-      ]
+      ],
+      "weight" : "140kg",
+      "size" : "300cm"
     },
     "flying-gurnard" : {
       "sci" : "Dactylopterus Volitans",
       "colours" : [
         "#ffbdf6", "#cd4f10", "#d9bc52", "#04511d", "#348bc0"
-      ]
+      ],
+      "weight" : "1.8kg",
+      "size" : "50cm"
     },
     "pirhana" : {
       "sci" : "Pygocentrus Nattereri",
       "colours" : [
         "#ff8c27", "#48736c", "#5b6378", "#ad0505", "#39343a"
-      ]
+      ],
+      "weight" : "1.4kg",
+      "size" : "14-26cm"
     },
     "mangrove-snapper" : {
       "sci" : "Lutjanus Griseus",
       "colours" : [
         "#373035", "#d1a949", "#6a170f", "#87e9ef", "#775289"
-      ]
+      ],
+      "weight" : "20kg",
+      "size" : "40cm"
     },
     "blue-marlin" : {
       "sci" : "Makaira Nigricans",
       "colours" : [
         "#9a7fa6", "#071b64", "#82c2dc", "#979877", "#a0a8fd"
-      ]
+      ],
+      "weight" : "500-1000kg",
+      "size" : "500cm"
     },
     "crocodile-icefish" : {
       "sci" : "Channichthyidae",
       "colours" : [
         "#88d3ea", "#c9b61c", "#023964", "#827c91", "#e31514"
-      ]
+      ],
+      "weight" : "2kg",
+      "size" : "25-50cm"
     },
     "atlantic-halibut" : {
       "sci" : "Hippoglossus Hippoglossus",
       "colours" : [
         "#88750b", "#47452e", "#717e5e", "#37332e", "#979927"
-      ]
+      ],
+      "weight" : "320kg",
+      "size" : "470cm"
     },
     "hogfish" : {
       "sci" : "Lachnolaimus Maximus",
       "colours" : [
         "#e28283", "#e6c6bb", "#fb80db", "#212e4e", "#b16162"
-      ]
+      ],
+      "weight" : "11kg",
+      "size" : "91cm"
     },
     "blue-ram-cichlid" : {
       "sci" : "Mikrogeophagus Ramirezi",
       "colours" : [
         "#ff6200", "#00f8eb", "#6b7cd0", "#1b0a58", "#e794d0"
-      ]
+      ],
+      "weight" : "",
+      "size" : "10cm"
     },
     "goliath-grouper" : {
       "sci" : "Epinephelus Itajara",
       "colours" : [
         "#af6b7a", "#c9cc73", "#6a693b", "#98b12f", "#4a3d1a"
-      ]
+      ],
+      "weight" : "360kg",
+      "size" : "250cm"
     },
     "goblin-shark" : {
       "sci" : "Mitsukurina Owstoni",
       "colours" : [
         "#e6c7e6", "#a1a2b6", "#ff5883", "#514460", "#9299df"
-      ]
+      ],
+      "weight" : "190kg",
+      "size" : "300-400cm"
     },
     "blue-parrotfish" : {
       "sci" : "Scarus Coeruleus",
       "colours" : [
         "#0891cc", "#1f66a4", "#1d55af", "#58aed4", "#012135"
-      ]
+      ],
+      "weight" : "9kg",
+      "size" : "30-75cm"
     },
     "paraya" : {
       "sci" : "Hydrolycus Scomberoides",
       "colours" : [
         "#cbc259", "#b5c3ce", "#a69fbe", "#363b3e", "#654552"
-      ]
+      ],
+      "weight" : "17.8kg",
+      "size" : "30cm"
     },
     "humpback-anglerfish" : {
       "sci" : "Melanocetus Johnsonii",
       "colours" : [
         "#af672c", "#992a0e", "#32fff8", "#f0dfc3", "#d6b2b2"
-      ]
+      ],
+      "weight" : "290g",
+      "size" : "f: 18cm   m: 3cm"
     },
     "yellowtail-kingfish" : {
       "sci" : "Seriola Lalandi",
       "colours" : [
         "#c8cdd0", "#282e68", "#ffd900", "#ad8097", "#ddf3ff"
-      ]
+      ],
+      "weight" : "38kg",
+      "size" : "180cm"
     },
     "stoplight-loosejaw" : {
       "sci" : "Malacosteus Niger",
       "colours" : [
         "#292345", "#00eaff", "#243843", "#656148", "#3d6982"
-      ]
+      ],
+      "weight" : "",
+      "size" : "25cm"
     },
     "star-sturgeon" : {
       "sci" : "Acipenser Stellatus",
       "colours" : [
         "#6d9271", "#c25b5c", "#e8e0af", "#0a1a0d", "#7d7ba0"
-      ]
+      ],
+      "weight" : "80kg",
+      "size" : "220cm"
     },
     "barracuda" : {
       "sci" : "Sphyraena",
       "colours" : [
         "#988e68", "#2b3533", "#8b5c9c", "#4d746a", "#65544e"
-      ]
+      ],
+      "weight" : "23kg",
+      "size" : "165cm"
     },
     "tiger-queen-anthias" : {
       "sci" : "Pseudanthias Lori",
       "colours" : [
         "#ff98a3", "#942f75", "#fe931f", "#fff06f", "#9da8de"
-      ]
+      ],
+      "weight" : "",
+      "size" : "7cm"
     },
     "wels-catfish" : {
       "sci" : "Silurus Glanis",
       "colours" : [
         "#4e6b55", "#f4dbee", "#32292e", "#1b2f24", "#030804"
-      ]
+      ],
+      "weight" : "300kg",
+      "size" : "500cm"
     },
     "black-sea-bass" : {
       "sci" : "Centropristis Striata",
       "colours" : [
         "#0e1e2f", "#788e9f", "#ffaea1", "#806b8f", "#b3afb6"
-      ]
+      ],
+      "weight" : "4.3kg",
+      "size" : "50cm"
     },
     "asian-catfish" : {
       "sci" : "Horabagrus Brachysoma",
       "colours" : [
         "#ea2f2f", "#f4aa51", "#e4c7b7", "#312f29", "#90e4d9"
-      ]
+      ],
+      "weight" : "",
+      "size" : "12cm"
     },
     "mahi-mahi" : {
       "sci" : "Coryphaena Hippurus",
       "colours" : [
         "#a4fc34", "#fcff00", "#0b2266", "#40f1d7", "#1e80ff"
-      ]
+      ],
+      "weight" : "7-13kg",
+      "size" : "100cm"
     },
     "atlantic-mackerel" : {
       "sci" : "Scomber Scombrus",
       "colours" : [
         "#0b1213", "#238585", "#79d8eb", "#fff2d0", "#3c5d71"
-      ]
+      ],
+      "weight" : "1.9kg",
+      "size" : "47cm"
     },
     "bonito" : {
       "sci" : "Sarda Sarda",
       "colours" : [
         "#fad38a", "#3ed5b7", "#6b5784", "#ffdef8", "#f8c0c0"
-      ]
+      ],
+      "weight" : "5-6kg",
+      "size" : "70cm"
     },
     "red-coris-wrasse" : {
       "sci" : "Coris Gaimard",
       "colours" : [
         "#fb4e3d", "#00caf8", "#fad53e", "#a84327", "#0a1c9a"
-      ]
+      ],
+      "weight" : "",
+      "size" : "40cm"
     },
     "sockeye-salmon" : {
       "sci" : "Oncorhynchus Nerka",
       "colours" : [
         "#0c0105", "#dd3e2b", "#638f82", "#f0c11b", "#559ba7"
-      ]
+      ],
+      "weight" : "2.3-7kg",
+      "size" : "84cm"
     },
     "rainbow-trout" : {
       "sci" : "Oncorhynchus Mykiss",
       "colours" : [
         "#6e899c", "#cfc8b5", "#f1645a", "#0c1f23", "#afb6bc"
-      ]
+      ],
+      "weight" : "0.5-9kg",
+      "size" : "40cm"
     },
     "bluefin-tuna" : {
       "sci" : "Thunnus Thynnus",
       "colours" : [
         "#42a1dd", "#9fe4ef", "#140f4e", "#3e96d5", "#ff91ea"
-      ]
+      ],
+      "weight" : "225-250kg",
+      "size" : "200-250cm"
     },
     "asian-arowana" : {
       "sci" : "Scleropages Formosus",
       "colours" : [
         "#e1265c", "#9b5210", "#eac081", "#f1679c", "#a2103a"
-      ]
+      ],
+      "weight" : "15kg",
+      "size" : "90cm"
     },
     "yellow-boxfish" : {
       "sci" : "Ostracion Cubicus",
       "colours" : [
         "#dbb52e", "#1a1d14", "#f9f095", "#ad8c00", "#eeecd5"
-      ]
+      ],
+      "weight" : "",
+      "size" : "45cm"
     },
     "giant-gourami" : {
       "sci" : "Osphronemus Goramy",
       "colours" : [
         "#6caebe", "#e0b4d7", "#4b6193", "#deeeed", "#8a6b8b"
-      ]
+      ],
+      "weight" : "",
+      "size" : "45-70cm"
     }
   }
 }

@@ -63,9 +63,9 @@
 	
 	var _Fish2 = _interopRequireDefault(_Fish);
 	
-	var _Logo = __webpack_require__(/*! ./components/Logo */ 449);
+	var _FishImage = __webpack_require__(/*! ./components/FishImage */ 426);
 	
-	var _Logo2 = _interopRequireDefault(_Logo);
+	var _FishImage2 = _interopRequireDefault(_FishImage);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -74,8 +74,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// TODO: remove all .DS_Stores
 	
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
@@ -98,7 +96,7 @@
 	
 	      setTimeout(function () {
 	        return _this2.setState({ loading: false });
-	      }, 4500);
+	      }, 4000);
 	    }
 	  }, {
 	    key: 'render',
@@ -122,7 +120,7 @@
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              _react2.default.createElement(_Logo2.default, null)
+	              _react2.default.createElement(_FishImage2.default, { name: 'logo' })
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -41956,26 +41954,18 @@
 	  function ModalContents() {
 	    _classCallCheck(this, ModalContents);
 	
-	    var _this = _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
-	
-	    _this.copyColour = _this.copyColour.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (ModalContents.__proto__ || Object.getPrototypeOf(ModalContents)).call(this));
 	  }
 	
 	  _createClass(ModalContents, [{
-	    key: 'copyColour',
-	    value: function copyColour(name) {
-	      window.prompt("Copy to clipboard with (cmd/ctrl) + c and hit enter", name);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-	
 	      var name = this.props.name;
 	
 	      var fishName = name.replace(/-/g, ' ');
 	      var colourCode = _data2.default.fish[name].colours;
+	      var fishWeight = _data2.default.fish[name].weight;
+	      var fishSize = _data2.default.fish[name].size;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -41994,12 +41984,31 @@
 	        ),
 	        _react2.default.createElement(
 	          'ul',
-	          { className: 'schemes' },
+	          { className: 'schemes col-sm-6' },
 	          colourCode.map(function (name, i) {
-	            return _react2.default.createElement('li', { key: i, style: { backgroundColor: name }, className: 'scheme', onClick: function onClick() {
-	                return _this2.copyColour(name);
-	              } });
+	            return _react2.default.createElement('li', { key: i, style: { backgroundColor: name }, className: 'scheme' });
 	          })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-sm-6 facts' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'fact-details' },
+	            _react2.default.createElement('img', { src: 'app/images/weight.png' }),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'weight' },
+	              fishWeight
+	            ),
+	            _react2.default.createElement('br', { className: 'visible-mobile' }),
+	            _react2.default.createElement('img', { src: 'app/images/size.png' }),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              fishSize
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -42027,7 +42036,9 @@
 					"#999451",
 					"#d77717",
 					"#4e9b98"
-				]
+				],
+				"weight": "",
+				"size": "2.5-3cm"
 			},
 			"ballyhoo": {
 				"sci": "Hemiramphus Brasiliensis",
@@ -42037,7 +42048,9 @@
 					"#e7cb54",
 					"#eee5d3",
 					"#2ce887"
-				]
+				],
+				"weight": "0.35kg",
+				"size": "35cm"
 			},
 			"blackfin-scad": {
 				"sci": "Alepes Melanoptera",
@@ -42047,7 +42060,9 @@
 					"#c3c5f0",
 					"#ffb07a",
 					"#281e77"
-				]
+				],
+				"weight": "",
+				"size": "25cm"
 			},
 			"red-roman": {
 				"sci": "Chrysoblephus Laticeps",
@@ -42057,7 +42072,9 @@
 					"#8d0809",
 					"#c97574",
 					"#ffec81"
-				]
+				],
+				"weight": "4.2kg",
+				"size": "50cm"
 			},
 			"rouget-barbet": {
 				"sci": "Mullus Surmuletus",
@@ -42067,7 +42084,9 @@
 					"#a12b1f",
 					"#bd243e",
 					"#ede257"
-				]
+				],
+				"weight": "",
+				"size": "25cm"
 			},
 			"zander": {
 				"sci": "Sander Lucioperca",
@@ -42077,7 +42096,9 @@
 					"#45596c",
 					"#616089",
 					"#ddc374"
-				]
+				],
+				"weight": "20kg",
+				"size": "40-80cm"
 			},
 			"flying-fish": {
 				"sci": "Cheilopogon Melanurus",
@@ -42087,7 +42108,9 @@
 					"#614b6e",
 					"#62503c",
 					"#7a8da5"
-				]
+				],
+				"weight": "",
+				"size": "25cm"
 			},
 			"yellowmargin-triggerfish": {
 				"sci": "Pseudobalistes Flavimarginatus",
@@ -42097,7 +42120,9 @@
 					"#e8bcf5",
 					"#a339e5",
 					"#ffb700"
-				]
+				],
+				"weight": "",
+				"size": "20-50cm"
 			},
 			"paroon-shark": {
 				"sci": "Pangasius Sanitwongsei",
@@ -42107,7 +42132,9 @@
 					"#4b3d50",
 					"#97ffe8",
 					"#745d73"
-				]
+				],
+				"weight": "300kg",
+				"size": "300cm"
 			},
 			"milkfish": {
 				"sci": "Chanos Chanos",
@@ -42117,7 +42144,9 @@
 					"#776f81",
 					"#1a566e",
 					"#20495e"
-				]
+				],
+				"weight": "14kg",
+				"size": "100cm"
 			},
 			"diamond-trevally": {
 				"sci": "Alectis Indica",
@@ -42127,7 +42156,9 @@
 					"#61ea9d",
 					"#aae4ff",
 					"#bccd89"
-				]
+				],
+				"weight": "25kg",
+				"size": "165cm"
 			},
 			"california-sheephead": {
 				"sci": "Semicossyphus Pulcher",
@@ -42137,7 +42168,9 @@
 					"#a78b8b",
 					"#aca4a4",
 					"#1a1919"
-				]
+				],
+				"weight": "16kg",
+				"size": "91cm"
 			},
 			"orange-roughy": {
 				"sci": "Hoplostethus Atlanticus",
@@ -42147,7 +42180,9 @@
 					"#987a9f",
 					"#fff09a",
 					"#491413"
-				]
+				],
+				"weight": "7kg",
+				"size": "35-45cm"
 			},
 			"european-pilchard": {
 				"sci": "Sardina Pilchardus",
@@ -42157,7 +42192,9 @@
 					"#244059",
 					"#06111d",
 					"#caa269"
-				]
+				],
+				"weight": "",
+				"size": "27cm"
 			},
 			"sloanes-viperfish": {
 				"sci": "Chauliodus Sloani",
@@ -42167,7 +42204,9 @@
 					"#1e2e56",
 					"#f76d84",
 					"#fff716"
-				]
+				],
+				"weight": "",
+				"size": "28cm"
 			},
 			"indo-pacific-sailfish": {
 				"sci": "Istiophorus Platypterus",
@@ -42177,7 +42216,9 @@
 					"#deb53c",
 					"#8a41a2",
 					"#4a4151"
-				]
+				],
+				"weight": "90kg",
+				"size": "300cm"
 			},
 			"giant-snakehead": {
 				"sci": "Channa Micropeltes",
@@ -42187,7 +42228,9 @@
 					"#037c64",
 					"#8fbdb6",
 					"#8ff135"
-				]
+				],
+				"weight": "20kg",
+				"size": "130cm"
 			},
 			"orange-spotted-sunfish": {
 				"sci": "Lepomis Humilis",
@@ -42197,7 +42240,9 @@
 					"#8f6e94",
 					"#7ec195",
 					"#e9e49a"
-				]
+				],
+				"weight": "",
+				"size": "15cm"
 			},
 			"four-horn-sculpin": {
 				"sci": "Myoxocephalus Quadricornis",
@@ -42207,7 +42252,9 @@
 					"#31260a",
 					"#644820",
 					"#cbaacd"
-				]
+				],
+				"weight": "0.13kg",
+				"size": "20-30cm"
 			},
 			"mudskipper": {
 				"sci": "Oxudercinae",
@@ -42217,7 +42264,9 @@
 					"#2b1822",
 					"#c6887e",
 					"#dbb495"
-				]
+				],
+				"weight": "0.06kg",
+				"size": "9.5cm"
 			},
 			"alligator-gar": {
 				"sci": "Atractosteus Spatula",
@@ -42227,7 +42276,9 @@
 					"#ff8c9f",
 					"#b198c0",
 					"#525d6d"
-				]
+				],
+				"weight": "140kg",
+				"size": "300cm"
 			},
 			"flying-gurnard": {
 				"sci": "Dactylopterus Volitans",
@@ -42237,7 +42288,9 @@
 					"#d9bc52",
 					"#04511d",
 					"#348bc0"
-				]
+				],
+				"weight": "1.8kg",
+				"size": "50cm"
 			},
 			"pirhana": {
 				"sci": "Pygocentrus Nattereri",
@@ -42247,7 +42300,9 @@
 					"#5b6378",
 					"#ad0505",
 					"#39343a"
-				]
+				],
+				"weight": "1.4kg",
+				"size": "14-26cm"
 			},
 			"mangrove-snapper": {
 				"sci": "Lutjanus Griseus",
@@ -42257,7 +42312,9 @@
 					"#6a170f",
 					"#87e9ef",
 					"#775289"
-				]
+				],
+				"weight": "20kg",
+				"size": "40cm"
 			},
 			"blue-marlin": {
 				"sci": "Makaira Nigricans",
@@ -42267,7 +42324,9 @@
 					"#82c2dc",
 					"#979877",
 					"#a0a8fd"
-				]
+				],
+				"weight": "500-1000kg",
+				"size": "500cm"
 			},
 			"crocodile-icefish": {
 				"sci": "Channichthyidae",
@@ -42277,7 +42336,9 @@
 					"#023964",
 					"#827c91",
 					"#e31514"
-				]
+				],
+				"weight": "2kg",
+				"size": "25-50cm"
 			},
 			"atlantic-halibut": {
 				"sci": "Hippoglossus Hippoglossus",
@@ -42287,7 +42348,9 @@
 					"#717e5e",
 					"#37332e",
 					"#979927"
-				]
+				],
+				"weight": "320kg",
+				"size": "470cm"
 			},
 			"hogfish": {
 				"sci": "Lachnolaimus Maximus",
@@ -42297,7 +42360,9 @@
 					"#fb80db",
 					"#212e4e",
 					"#b16162"
-				]
+				],
+				"weight": "11kg",
+				"size": "91cm"
 			},
 			"blue-ram-cichlid": {
 				"sci": "Mikrogeophagus Ramirezi",
@@ -42307,7 +42372,9 @@
 					"#6b7cd0",
 					"#1b0a58",
 					"#e794d0"
-				]
+				],
+				"weight": "",
+				"size": "10cm"
 			},
 			"goliath-grouper": {
 				"sci": "Epinephelus Itajara",
@@ -42317,7 +42384,9 @@
 					"#6a693b",
 					"#98b12f",
 					"#4a3d1a"
-				]
+				],
+				"weight": "360kg",
+				"size": "250cm"
 			},
 			"goblin-shark": {
 				"sci": "Mitsukurina Owstoni",
@@ -42327,7 +42396,9 @@
 					"#ff5883",
 					"#514460",
 					"#9299df"
-				]
+				],
+				"weight": "",
+				"size": "300-400cm"
 			},
 			"blue-parrotfish": {
 				"sci": "Scarus Coeruleus",
@@ -42337,7 +42408,9 @@
 					"#1d55af",
 					"#58aed4",
 					"#012135"
-				]
+				],
+				"weight": "",
+				"size": "30-75cm"
 			},
 			"paraya": {
 				"sci": "Hydrolycus Scomberoides",
@@ -42347,7 +42420,9 @@
 					"#a69fbe",
 					"#363b3e",
 					"#654552"
-				]
+				],
+				"weight": "17.8kg",
+				"size": "30cm"
 			},
 			"humpback-anglerfish": {
 				"sci": "Melanocetus Johnsonii",
@@ -42357,7 +42432,9 @@
 					"#32fff8",
 					"#f0dfc3",
 					"#d6b2b2"
-				]
+				],
+				"weight": "",
+				"size": "f: 18cm   m: 3cm"
 			},
 			"yellowtail-kingfish": {
 				"sci": "Seriola Lalandi",
@@ -42367,7 +42444,9 @@
 					"#ffd900",
 					"#ad8097",
 					"#ddf3ff"
-				]
+				],
+				"weight": "",
+				"size": "180cm"
 			},
 			"stoplight-loosejaw": {
 				"sci": "Malacosteus Niger",
@@ -42377,7 +42456,9 @@
 					"#243843",
 					"#656148",
 					"#3d6982"
-				]
+				],
+				"weight": "",
+				"size": ""
 			},
 			"star-sturgeon": {
 				"sci": "Acipenser Stellatus",
@@ -42387,7 +42468,9 @@
 					"#e8e0af",
 					"#0a1a0d",
 					"#7d7ba0"
-				]
+				],
+				"weight": "80kg",
+				"size": "220cm"
 			},
 			"barracuda": {
 				"sci": "Sphyraena",
@@ -42397,7 +42480,9 @@
 					"#8b5c9c",
 					"#4d746a",
 					"#65544e"
-				]
+				],
+				"weight": "",
+				"size": "165cm"
 			},
 			"tiger-queen-anthias": {
 				"sci": "Pseudanthias Lori",
@@ -42407,7 +42492,9 @@
 					"#fe931f",
 					"#fff06f",
 					"#9da8de"
-				]
+				],
+				"weight": "",
+				"size": ""
 			},
 			"wels-catfish": {
 				"sci": "Silurus Glanis",
@@ -42417,7 +42504,9 @@
 					"#32292e",
 					"#1b2f24",
 					"#030804"
-				]
+				],
+				"weight": "300kg",
+				"size": "500cm"
 			},
 			"black-sea-bass": {
 				"sci": "Centropristis Striata",
@@ -42427,7 +42516,9 @@
 					"#ffaea1",
 					"#806b8f",
 					"#b3afb6"
-				]
+				],
+				"weight": "4.3kg",
+				"size": "50cm"
 			},
 			"asian-catfish": {
 				"sci": "Horabagrus Brachysoma",
@@ -42437,7 +42528,9 @@
 					"#e4c7b7",
 					"#312f29",
 					"#90e4d9"
-				]
+				],
+				"weight": "",
+				"size": "12cm"
 			},
 			"mahi-mahi": {
 				"sci": "Coryphaena Hippurus",
@@ -42447,7 +42540,9 @@
 					"#0b2266",
 					"#40f1d7",
 					"#1e80ff"
-				]
+				],
+				"weight": "7-13kg",
+				"size": "100cm"
 			},
 			"atlantic-mackerel": {
 				"sci": "Scomber Scombrus",
@@ -42457,7 +42552,9 @@
 					"#79d8eb",
 					"#fff2d0",
 					"#3c5d71"
-				]
+				],
+				"weight": "",
+				"size": "47cm"
 			},
 			"bonito": {
 				"sci": "Sarda Sarda",
@@ -42467,7 +42564,9 @@
 					"#6b5784",
 					"#ffdef8",
 					"#f8c0c0"
-				]
+				],
+				"weight": "5-6kg",
+				"size": "70cm"
 			},
 			"red-coris-wrasse": {
 				"sci": "Coris Gaimard",
@@ -42477,7 +42576,9 @@
 					"#fad53e",
 					"#a84327",
 					"#0a1c9a"
-				]
+				],
+				"weight": "",
+				"size": "40cm"
 			},
 			"sockeye-salmon": {
 				"sci": "Oncorhynchus Nerka",
@@ -42487,7 +42588,9 @@
 					"#638f82",
 					"#f0c11b",
 					"#559ba7"
-				]
+				],
+				"weight": "2.3-7kg",
+				"size": "84cm"
 			},
 			"rainbow-trout": {
 				"sci": "Oncorhynchus Mykiss",
@@ -42497,7 +42600,9 @@
 					"#f1645a",
 					"#0c1f23",
 					"#afb6bc"
-				]
+				],
+				"weight": "0.5-9kg",
+				"size": ""
 			},
 			"bluefin-tuna": {
 				"sci": "Thunnus Thynnus",
@@ -42507,7 +42612,9 @@
 					"#140f4e",
 					"#3e96d5",
 					"#ff91ea"
-				]
+				],
+				"weight": "225-250kg",
+				"size": "200-250cm"
 			},
 			"asian-arowana": {
 				"sci": "Scleropages Formosus",
@@ -42517,7 +42624,9 @@
 					"#eac081",
 					"#f1679c",
 					"#a2103a"
-				]
+				],
+				"weight": "",
+				"size": "90cm"
 			},
 			"yellow-boxfish": {
 				"sci": "Ostracion Cubicus",
@@ -42527,7 +42636,9 @@
 					"#f9f095",
 					"#ad8c00",
 					"#eeecd5"
-				]
+				],
+				"weight": "",
+				"size": "45cm"
 			},
 			"giant-gourami": {
 				"sci": "Osphronemus Goramy",
@@ -42537,7 +42648,9 @@
 					"#4b6193",
 					"#deeeed",
 					"#8a6b8b"
-				]
+				],
+				"weight": "",
+				"size": "45-70cm"
 			}
 		}
 	};
@@ -44564,62 +44677,6 @@
 	  else this.add(className)
 	}
 
-
-/***/ },
-/* 449 */
-/*!********************************!*\
-  !*** ./app/components/Logo.js ***!
-  \********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _FishImage = __webpack_require__(/*! ./FishImage */ 426);
-	
-	var _FishImage2 = _interopRequireDefault(_FishImage);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Logo = function (_React$Component) {
-	  _inherits(Logo, _React$Component);
-	
-	  function Logo() {
-	    _classCallCheck(this, Logo);
-	
-	    return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
-	  }
-	
-	  _createClass(Logo, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'a',
-	        { href: 'http://skinsshark.github.io/the-sea' },
-	        _react2.default.createElement(_FishImage2.default, { name: 'logo' })
-	      );
-	    }
-	  }]);
-	
-	  return Logo;
-	}(_react2.default.Component);
-	
-	exports.default = Logo;
 
 /***/ }
 /******/ ]);
