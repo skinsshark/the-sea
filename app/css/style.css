@@ -118,6 +118,10 @@ img {
 	cursor: pointer;
 }
 
+h1 .img-fish:hover {
+  cursor: default;
+}
+
 @media only screen and (min-width: 601px) {
 	.modal-wrapper .img-fish {
 		animation: swim 1s ease-in-out infinite alternate;
