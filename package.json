@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "the illustrated encyclopedia of fish is a colour study piece, an educational tool, an interactive palette by sunday desert",
   "main": "index.js",
-  "author": "",
+  "author": "sunday desert",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.14.0",
