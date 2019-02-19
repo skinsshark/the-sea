@@ -114,7 +114,7 @@ class App extends Component {
         <footer>
           <p>c/2017 sunday desert</p>
           <p><small>the illustrated encyclopedia of fish is a colour study piece, an educational tool, an interactive palette</small></p>
-          <p><a href="http://sundaydesert.tumblr.com/" target="_blank" rel="noopener noreferrer"><img src={eye} alt="sundes secondary logo"/></a></p>
+          <p><a href="https://sundaydesert.com/" target="_blank" rel="noopener noreferrer"><img src={eye} alt="sundes secondary logo"/></a></p>
         </footer>
       </div>
     );

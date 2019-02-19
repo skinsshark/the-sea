@@ -16,16 +16,18 @@ class ModalContents extends Component {
         <p className="fish-names">
           <span className="en-fish">{fishName}</span> {sci}
         </p>
-        <ul className="schemes col-sm-6">
-          {colours.map((name, i)=>{
-            return <li key={i} style={{backgroundColor: name}} className="scheme"></li>;
-          })}
-        </ul>
-        <div className="col-sm-6 facts">
-          <div className="fact-details">
-            <img src={weightImage} alt={`weight of ${name} is ${weight}`} /><span className="weight">{weight}</span>
-            <br className="visible-mobile"/>
-            <img src={sizeImage} alt={`size of ${name} is ${size}`} /><span>{size}</span>
+        <div className="details">
+          <ul className="schemes">
+            {colours.map((name, i)=>{
+              return <li key={i} style={{backgroundColor: name}} className="scheme"></li>;
+            })}
+          </ul>
+          <div className="facts">
+            <div className="fact-details">
+              <img src={weightImage} alt={`weight of ${name} is ${weight}`} /><span className="weight">{weight}</span>
+              <br className="visible-mobile"/>
+              <img src={sizeImage} alt={`size of ${name} is ${size}`} /><span>{size}</span>
+            </div>
           </div>
         </div>
       </div>

@@ -340,11 +340,17 @@ small {
 }
 
 .modal-wrapper {
+	cursor: default;
 	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	vertical-align: bottom;
 }
 
 .modal-content {
+	width: auto;
 	font-family: 'Octanis';
 	position: absolute;
 	top: 5vh;
@@ -352,6 +358,8 @@ small {
 	left: 5vw;
 	right: 5vw;
 	border: none;
+	display: flex;
+	align-items: center;
 	background: #fff;
 	overflow: auto;
 	border-radius: 4px;
@@ -359,15 +367,6 @@ small {
 	padding: 20px;
 	box-shadow: none;
 	text-align: center;
-}
-
-@media only screen and (max-width: 991px) {
-	.modal-content {
-		top: 5vh;
-		bottom: 5vh;
-		left: 5vw;
-		right: 5vw;
-	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -382,7 +381,7 @@ small {
 }
 
 .modal-content img {
-	height: 75%;
+	height: auto;
 	width: 50vw;
 	text-align: center;
 	margin: 0 auto;
@@ -426,11 +425,17 @@ small {
 	font-size: 35px;
 }
 
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .schemes {
-	margin-top: 20px;
+	display: flex;
+	margin-bottom: 0;
 	padding: 0;
 	text-align: left;
-	padding-left: 15vw;
 }
 
 .modal-content .scheme {
@@ -449,11 +454,9 @@ small {
 }
 
 .facts {
-	margin-top: 20px;
 	padding: 0;
 	color: #909090;
 	text-align: right;
-	padding-right: 15vw;
 }
 
 @media only screen and (max-width: 991px) {
@@ -475,25 +478,26 @@ small {
 	padding-right: 30px;
 }
 
-@media only screen and (max-width: 992px) {
-	.facts {
-		margin-top: 13px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.facts {
-		margin-top: 13px;
-	}
-}
-
 @media only screen and (max-width: 600px) {
 	.facts .weight {
 		padding-right: 0;
 	}
+	.details {
+		flex-wrap: wrap;
+	}
+
+	.facts, .schemes {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.schemes {
+		margin-bottom: 25px;
+	}
 }
 
 .modal-overlay {
+	cursor: alias;
 	background-image: url("./images/modal-bg.png");
 	background-size: cover;
 	position: fixed;
